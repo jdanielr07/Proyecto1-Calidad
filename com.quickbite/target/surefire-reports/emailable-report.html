@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite - QuickBite Loyalty Program</th></tr>
+<tr><td><a href="#t0">Pruebas de SuscripcionService (HU-1, HU-2, HU-3, HU-9)</a></td><td class="num">13</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">86</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Pruebas de PuntosService (HU-4, HU-5, HU-8, HU-10)</a></td><td class="num">14</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">41</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Pruebas de ReglasService (HU-6, HU-7)</a></td><td class="num">11</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">19</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">38</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">146</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite - QuickBite Loyalty Program</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Pruebas de SuscripcionService (HU-1, HU-2, HU-3, HU-9) &#8212; passed</th></tr><tr class="passedeven"><td rowspan="13">com.quickbite.service.SuscripcionServiceTest</td><td><a href="#m0">activarSuscripcion_cuandoNoExiste_debeLanzarExcepcion</a></td><td rowspan="1">1772408661243</td><td rowspan="1">3</td></tr><tr class="passedeven"><td><a href="#m1">activarSuscripcion_cuandoSuscripcionInactiva_debeQuedarActiva</a></td><td rowspan="1">1772408661249</td><td rowspan="1">20</td></tr><tr class="passedeven"><td><a href="#m2">consultarEstado_cuandoSuscripcionActiva_debeRetornarActiva</a></td><td rowspan="1">1772408661271</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m3">consultarEstado_cuandoSuscripcionNoExiste_debeLanzarExcepcion</a></td><td rowspan="1">1772408661272</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m4">desactivarSuscripcion_cuandoNoExiste_debeLanzarExcepcion</a></td><td rowspan="1">1772408661274</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m5">desactivarSuscripcion_cuandoSuscripcionActiva_debeQuedarInactiva</a></td><td rowspan="1">1772408661277</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m6">obtenerSuscripcionesActivas_cuandoExistenVarias_debeRetornarSoloActivas</a></td><td rowspan="1">1772408661279</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m7">obtenerSuscripcionesActivas_cuandoRepositorioVacio_debeRetornarListaVacia</a></td><td rowspan="1">1772408661281</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m8">obtenerSuscripcionesInactivas_cuandoExistenVarias_debeRetornarSoloInactivas</a></td><td rowspan="1">1772408661283</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m9">registrarSuscripcion_cuandoClienteIdVacio_debeLanzarExcepcion</a></td><td rowspan="1">1772408661285</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m10">registrarSuscripcion_cuandoDatosValidos_debeRetornarSuscripcionActiva</a></td><td rowspan="1">1772408661286</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m11">registrarSuscripcion_cuandoIdDuplicado_debeLanzarExcepcion</a></td><td rowspan="1">1772408661288</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m12">registrarSuscripcion_cuandoIdNulo_debeLanzarExcepcion</a></td><td rowspan="1">1772408661289</td><td rowspan="1">1</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Pruebas de PuntosService (HU-4, HU-5, HU-8, HU-10) &#8212; passed</th></tr><tr class="passedeven"><td rowspan="14">com.quickbite.service.PuntosServiceTest</td><td><a href="#m13">acumularPuntos_cuandoCantidadNegativa_debeLanzarExcepcion</a></td><td rowspan="1">1772408661369</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m14">acumularPuntos_cuandoSuscripcionActiva_debeIncrementarPuntosDeLealtad</a></td><td rowspan="1">1772408661371</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m15">acumularPuntos_cuandoSuscripcionInactiva_debeLanzarExcepcion</a></td><td rowspan="1">1772408661374</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m16">acumularPuntos_cuandoSuscripcionNoExiste_debeLanzarExcepcion</a></td><td rowspan="1">1772408661377</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m17">canjearRecompensa_cuandoPuntosInsuficientes_debeLanzarExcepcion</a></td><td rowspan="1">1772408661379</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m18">canjearRecompensa_cuandoPuntosSuficientes_debeDescontarPuntosDeLealtad</a></td><td rowspan="1">1772408661383</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m19">canjearRecompensa_cuandoRecompensaNoDisponible_debeLanzarExcepcion</a></td><td rowspan="1">1772408661386</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m20">canjearRecompensa_cuandoSuscripcionInactiva_debeLanzarExcepcion</a></td><td rowspan="1">1772408661387</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m21">consultarHistorial_cuandoExistenMovimientos_debeRetornarTodos</a></td><td rowspan="1">1772408661390</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m22">consultarHistorial_cuandoSinMovimientos_debeRetornarListaVacia</a></td><td rowspan="1">1772408661394</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m23">consultarHistorial_cuandoSuscripcionNoExiste_debeLanzarExcepcion</a></td><td rowspan="1">1772408661396</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m24">obtenerTotalAcumulado_cuandoSinMovimientos_debeRetornarCero</a></td><td rowspan="1">1772408661398</td><td rowspan="1">3</td></tr><tr class="passedeven"><td><a href="#m25">obtenerTotalAcumulado_cuandoVariosPedidos_debeRetornarSumaCorrecta</a></td><td rowspan="1">1772408661403</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m26">obtenerTotalCanjeado_cuandoVariosCanjes_debeRetornarSumaCorrecta</a></td><td rowspan="1">1772408661406</td><td rowspan="1">1</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Pruebas de ReglasService (HU-6, HU-7) &#8212; passed</th></tr><tr class="passedeven"><td rowspan="11">com.quickbite.service.ReglasServiceTest</td><td><a href="#m27">definirReglaAcumulacion_cuandoDatosValidos_debeCrearReglaActiva</a></td><td rowspan="1">1772408661419</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m28">definirReglaAcumulacion_cuandoIdDuplicado_debeLanzarExcepcion</a></td><td rowspan="1">1772408661422</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m29">definirReglaAcumulacion_cuandoPuntosCero_debeLanzarExcepcion</a></td><td rowspan="1">1772408661423</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m30">definirReglaRedencion_cuandoDatosValidos_debeCrearReglaActiva</a></td><td rowspan="1">1772408661424</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m31">definirReglaRedencion_cuandoIdDuplicado_debeLanzarExcepcion</a></td><td rowspan="1">1772408661427</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m32">definirReglaRedencion_cuandoPuntosNegativos_debeLanzarExcepcion</a></td><td rowspan="1">1772408661429</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m33">obtenerReglaAcumulacionActiva_cuandoExisteReglaActiva_debeRetornarla</a></td><td rowspan="1">1772408661430</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m34">obtenerReglaAcumulacionActiva_cuandoNoHayReglas_debeRetornarOptionalVacio</a></td><td rowspan="1">1772408661432</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m35">obtenerReglaRedencionActiva_cuandoExisteReglaActiva_debeRetornarla</a></td><td rowspan="1">1772408661433</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m36">obtenerReglaRedencionActiva_cuandoNoHayReglas_debeRetornarOptionalVacio</a></td><td rowspan="1">1772408661435</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m37">obtenerReglasAcumulacion_cuandoExisteUnaRegla_debeRetornarListaConUnElemento</a></td><td rowspan="1">1772408661436</td><td rowspan="1">0</td></tr></tbody>
+</table>
+<h2>Pruebas de SuscripcionService (HU-1, HU-2, HU-3, HU-9)</h2><h3 id="m0">com.quickbite.service.SuscripcionServiceTest#activarSuscripcion_cuandoNoExiste_debeLanzarExcepcion</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.quickbite.exception.SuscripcionNoEncontradaException: No se encontro una suscripcion con el ID: SUB-INEXISTENTE
+	at com.quickbite.service.SuscripcionService.lambda$obtenerSuscripcionOLanzarExcepcion$0(SuscripcionService.java:113)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.quickbite.service.SuscripcionService.obtenerSuscripcionOLanzarExcepcion(SuscripcionService.java:113)
+	at com.quickbite.service.SuscripcionService.activarSuscripcion(SuscripcionService.java:59)
+	at com.quickbite.service.SuscripcionServiceTest.activarSuscripcion_cuandoNoExiste_debeLanzarExcepcion(SuscripcionServiceTest.java:110)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.quickbite.service.SuscripcionServiceTest#activarSuscripcion_cuandoSuscripcionInactiva_debeQuedarActiva</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.quickbite.service.SuscripcionServiceTest#consultarEstado_cuandoSuscripcionActiva_debeRetornarActiva</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.quickbite.service.SuscripcionServiceTest#consultarEstado_cuandoSuscripcionNoExiste_debeLanzarExcepcion</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.quickbite.exception.SuscripcionNoEncontradaException: No se encontro una suscripcion con el ID: SUB-INEXISTENTE
+	at com.quickbite.service.SuscripcionService.lambda$obtenerSuscripcionOLanzarExcepcion$0(SuscripcionService.java:113)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.quickbite.service.SuscripcionService.obtenerSuscripcionOLanzarExcepcion(SuscripcionService.java:113)
+	at com.quickbite.service.SuscripcionService.consultarEstado(SuscripcionService.java:84)
+	at com.quickbite.service.SuscripcionServiceTest.consultarEstado_cuandoSuscripcionNoExiste_debeLanzarExcepcion(SuscripcionServiceTest.java:165)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.quickbite.service.SuscripcionServiceTest#desactivarSuscripcion_cuandoNoExiste_debeLanzarExcepcion</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.quickbite.exception.SuscripcionNoEncontradaException: No se encontro una suscripcion con el ID: SUB-INEXISTENTE
+	at com.quickbite.service.SuscripcionService.lambda$obtenerSuscripcionOLanzarExcepcion$0(SuscripcionService.java:113)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.quickbite.service.SuscripcionService.obtenerSuscripcionOLanzarExcepcion(SuscripcionService.java:113)
+	at com.quickbite.service.SuscripcionService.desactivarSuscripcion(SuscripcionService.java:71)
+	at com.quickbite.service.SuscripcionServiceTest.desactivarSuscripcion_cuandoNoExiste_debeLanzarExcepcion(SuscripcionServiceTest.java:138)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.quickbite.service.SuscripcionServiceTest#desactivarSuscripcion_cuandoSuscripcionActiva_debeQuedarInactiva</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.quickbite.service.SuscripcionServiceTest#obtenerSuscripcionesActivas_cuandoExistenVarias_debeRetornarSoloActivas</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.quickbite.service.SuscripcionServiceTest#obtenerSuscripcionesActivas_cuandoRepositorioVacio_debeRetornarListaVacia</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.quickbite.service.SuscripcionServiceTest#obtenerSuscripcionesInactivas_cuandoExistenVarias_debeRetornarSoloInactivas</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.quickbite.service.SuscripcionServiceTest#registrarSuscripcion_cuandoClienteIdVacio_debeLanzarExcepcion</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: El ID de cliente no puede ser nulo o vacío.
+	at com.quickbite.service.SuscripcionService.registrarSuscripcion(SuscripcionService.java:41)
+	at com.quickbite.service.SuscripcionServiceTest.registrarSuscripcion_cuandoClienteIdVacio_debeLanzarExcepcion(SuscripcionServiceTest.java:81)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.quickbite.service.SuscripcionServiceTest#registrarSuscripcion_cuandoDatosValidos_debeRetornarSuscripcionActiva</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.quickbite.service.SuscripcionServiceTest#registrarSuscripcion_cuandoIdDuplicado_debeLanzarExcepcion</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Ya existe una suscripción con el ID: SUB-001
+	at com.quickbite.service.SuscripcionService.registrarSuscripcion(SuscripcionService.java:44)
+	at com.quickbite.service.SuscripcionServiceTest.registrarSuscripcion_cuandoIdDuplicado_debeLanzarExcepcion(SuscripcionServiceTest.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.quickbite.service.SuscripcionServiceTest#registrarSuscripcion_cuandoIdNulo_debeLanzarExcepcion</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: El ID de suscripción no puede ser nulo o vacío.
+	at com.quickbite.service.SuscripcionService.registrarSuscripcion(SuscripcionService.java:38)
+	at com.quickbite.service.SuscripcionServiceTest.registrarSuscripcion_cuandoIdNulo_debeLanzarExcepcion(SuscripcionServiceTest.java:69)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Pruebas de PuntosService (HU-4, HU-5, HU-8, HU-10)</h2><h3 id="m13">com.quickbite.service.PuntosServiceTest#acumularPuntos_cuandoCantidadNegativa_debeLanzarExcepcion</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: La cantidad de puntos a acumular debe ser mayor a 0.
+	at com.quickbite.service.PuntosService.acumularPuntos(PuntosService.java:46)
+	at com.quickbite.service.PuntosServiceTest.acumularPuntos_cuandoCantidadNegativa_debeLanzarExcepcion(PuntosServiceTest.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.quickbite.service.PuntosServiceTest#acumularPuntos_cuandoSuscripcionActiva_debeIncrementarPuntosDeLealtad</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">com.quickbite.service.PuntosServiceTest#acumularPuntos_cuandoSuscripcionInactiva_debeLanzarExcepcion</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.quickbite.exception.SuscripcionInactivaException: La suscripcion con ID: SUB-001 se encuentra inactiva.
+	at com.quickbite.service.PuntosService.obtenerSuscripcionActivaOLanzarExcepcion(PuntosService.java:137)
+	at com.quickbite.service.PuntosService.acumularPuntos(PuntosService.java:48)
+	at com.quickbite.service.PuntosServiceTest.acumularPuntos_cuandoSuscripcionInactiva_debeLanzarExcepcion(PuntosServiceTest.java:68)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">com.quickbite.service.PuntosServiceTest#acumularPuntos_cuandoSuscripcionNoExiste_debeLanzarExcepcion</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.quickbite.exception.SuscripcionNoEncontradaException: No se encontro una suscripcion con el ID: SUB-INEXISTENTE
+	at com.quickbite.service.PuntosService.lambda$obtenerSuscripcionOLanzarExcepcion$0(PuntosService.java:144)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.quickbite.service.PuntosService.obtenerSuscripcionOLanzarExcepcion(PuntosService.java:144)
+	at com.quickbite.service.PuntosService.obtenerSuscripcionActivaOLanzarExcepcion(PuntosService.java:135)
+	at com.quickbite.service.PuntosService.acumularPuntos(PuntosService.java:48)
+	at com.quickbite.service.PuntosServiceTest.acumularPuntos_cuandoSuscripcionNoExiste_debeLanzarExcepcion(PuntosServiceTest.java:91)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">com.quickbite.service.PuntosServiceTest#canjearRecompensa_cuandoPuntosInsuficientes_debeLanzarExcepcion</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.quickbite.exception.PuntosInsuficientesException: Puntos insuficientes. Disponibles: 50, Requeridos: 200
+	at com.quickbite.service.PuntosService.canjearRecompensa(PuntosService.java:81)
+	at com.quickbite.service.PuntosServiceTest.canjearRecompensa_cuandoPuntosInsuficientes_debeLanzarExcepcion(PuntosServiceTest.java:126)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">com.quickbite.service.PuntosServiceTest#canjearRecompensa_cuandoPuntosSuficientes_debeDescontarPuntosDeLealtad</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">com.quickbite.service.PuntosServiceTest#canjearRecompensa_cuandoRecompensaNoDisponible_debeLanzarExcepcion</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: La recompensa no está disponible o es nula.
+	at com.quickbite.service.PuntosService.canjearRecompensa(PuntosService.java:73)
+	at com.quickbite.service.PuntosServiceTest.canjearRecompensa_cuandoRecompensaNoDisponible_debeLanzarExcepcion(PuntosServiceTest.java:140)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">com.quickbite.service.PuntosServiceTest#canjearRecompensa_cuandoSuscripcionInactiva_debeLanzarExcepcion</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.quickbite.exception.SuscripcionInactivaException: La suscripcion con ID: SUB-001 se encuentra inactiva.
+	at com.quickbite.service.PuntosService.obtenerSuscripcionActivaOLanzarExcepcion(PuntosService.java:137)
+	at com.quickbite.service.PuntosService.canjearRecompensa(PuntosService.java:75)
+	at com.quickbite.service.PuntosServiceTest.canjearRecompensa_cuandoSuscripcionInactiva_debeLanzarExcepcion(PuntosServiceTest.java:154)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">com.quickbite.service.PuntosServiceTest#consultarHistorial_cuandoExistenMovimientos_debeRetornarTodos</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m22">com.quickbite.service.PuntosServiceTest#consultarHistorial_cuandoSinMovimientos_debeRetornarListaVacia</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m23">com.quickbite.service.PuntosServiceTest#consultarHistorial_cuandoSuscripcionNoExiste_debeLanzarExcepcion</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">com.quickbite.exception.SuscripcionNoEncontradaException: No se encontro una suscripcion con el ID: SUB-INEXISTENTE
+	at com.quickbite.service.PuntosService.lambda$obtenerSuscripcionOLanzarExcepcion$0(PuntosService.java:144)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.quickbite.service.PuntosService.obtenerSuscripcionOLanzarExcepcion(PuntosService.java:144)
+	at com.quickbite.service.PuntosService.consultarHistorial(PuntosService.java:102)
+	at com.quickbite.service.PuntosServiceTest.consultarHistorial_cuandoSuscripcionNoExiste_debeLanzarExcepcion(PuntosServiceTest.java:197)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m24">com.quickbite.service.PuntosServiceTest#obtenerTotalAcumulado_cuandoSinMovimientos_debeRetornarCero</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m25">com.quickbite.service.PuntosServiceTest#obtenerTotalAcumulado_cuandoVariosPedidos_debeRetornarSumaCorrecta</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m26">com.quickbite.service.PuntosServiceTest#obtenerTotalCanjeado_cuandoVariosCanjes_debeRetornarSumaCorrecta</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Pruebas de ReglasService (HU-6, HU-7)</h2><h3 id="m27">com.quickbite.service.ReglasServiceTest#definirReglaAcumulacion_cuandoDatosValidos_debeCrearReglaActiva</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m28">com.quickbite.service.ReglasServiceTest#definirReglaAcumulacion_cuandoIdDuplicado_debeLanzarExcepcion</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Ya existe una regla de acumulación con el ID: RA-001
+	at com.quickbite.service.ReglasService.definirReglaAcumulacion(ReglasService.java:39)
+	at com.quickbite.service.ReglasServiceTest.definirReglaAcumulacion_cuandoIdDuplicado_debeLanzarExcepcion(ReglasServiceTest.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m29">com.quickbite.service.ReglasServiceTest#definirReglaAcumulacion_cuandoPuntosCero_debeLanzarExcepcion</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Los puntos por pedido deben ser mayores a 0.
+	at com.quickbite.service.ReglasService.definirReglaAcumulacion(ReglasService.java:36)
+	at com.quickbite.service.ReglasServiceTest.definirReglaAcumulacion_cuandoPuntosCero_debeLanzarExcepcion(ReglasServiceTest.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m30">com.quickbite.service.ReglasServiceTest#definirReglaRedencion_cuandoDatosValidos_debeCrearReglaActiva</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m31">com.quickbite.service.ReglasServiceTest#definirReglaRedencion_cuandoIdDuplicado_debeLanzarExcepcion</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Ya existe una regla de redención con el ID: RR-001
+	at com.quickbite.service.ReglasService.definirReglaRedencion(ReglasService.java:65)
+	at com.quickbite.service.ReglasServiceTest.definirReglaRedencion_cuandoIdDuplicado_debeLanzarExcepcion(ReglasServiceTest.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m32">com.quickbite.service.ReglasServiceTest#definirReglaRedencion_cuandoPuntosNegativos_debeLanzarExcepcion</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Los puntos mínimos para redención deben ser mayores a 0.
+	at com.quickbite.service.ReglasService.definirReglaRedencion(ReglasService.java:62)
+	at com.quickbite.service.ReglasServiceTest.definirReglaRedencion_cuandoPuntosNegativos_debeLanzarExcepcion(ReglasServiceTest.java:73)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m33">com.quickbite.service.ReglasServiceTest#obtenerReglaAcumulacionActiva_cuandoExisteReglaActiva_debeRetornarla</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m34">com.quickbite.service.ReglasServiceTest#obtenerReglaAcumulacionActiva_cuandoNoHayReglas_debeRetornarOptionalVacio</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m35">com.quickbite.service.ReglasServiceTest#obtenerReglaRedencionActiva_cuandoExisteReglaActiva_debeRetornarla</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m36">com.quickbite.service.ReglasServiceTest#obtenerReglaRedencionActiva_cuandoNoHayReglas_debeRetornarOptionalVacio</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m37">com.quickbite.service.ReglasServiceTest#obtenerReglasAcumulacion_cuandoExisteUnaRegla_debeRetornarListaConUnElemento</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

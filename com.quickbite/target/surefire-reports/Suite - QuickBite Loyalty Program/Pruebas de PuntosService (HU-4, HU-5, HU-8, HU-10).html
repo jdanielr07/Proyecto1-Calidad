@@ -1,0 +1,434 @@
+<html>
+<head>
+<title>TestNG:  Pruebas de PuntosService (HU-4, HU-5, HU-8, HU-10)</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Pruebas de PuntosService (HU-4, HU-5, HU-8, HU-10)</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>14/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Mar 01 17:44:21 CST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (41 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.quickbite.service.PuntosServiceTest.acumularPuntos_cuandoSuscripcionInactiva_debeLanzarExcepcion()'><b>acumularPuntos_cuandoSuscripcionInactiva_debeLanzarExcepcion</b><br>Test class: com.quickbite.service.PuntosServiceTest<br>Test method: HU4 - Fallo: Acumular puntos en suscripción inactiva debe lanzar excepción</td>
+<td><div><pre>com.quickbite.exception.SuscripcionInactivaException: La suscripcion con ID: SUB-001 se encuentra inactiva.
+	at com.quickbite.service.PuntosService.obtenerSuscripcionActivaOLanzarExcepcion(PuntosService.java:137)
+	at com.quickbite.service.PuntosService.acumularPuntos(PuntosService.java:48)
+	at com.quickbite.service.PuntosServiceTest.acumularPuntos_cuandoSuscripcionInactiva_debeLanzarExcepcion(PuntosServiceTest.java:68)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace159475521", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace159475521'><pre>com.quickbite.exception.SuscripcionInactivaException: La suscripcion con ID: SUB-001 se encuentra inactiva.
+	at com.quickbite.service.PuntosService.obtenerSuscripcionActivaOLanzarExcepcion(PuntosService.java:137)
+	at com.quickbite.service.PuntosService.acumularPuntos(PuntosService.java:48)
+	at com.quickbite.service.PuntosServiceTest.acumularPuntos_cuandoSuscripcionInactiva_debeLanzarExcepcion(PuntosServiceTest.java:68)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.quickbite.service.PuntosServiceTest@25fb8912</td></tr>
+<tr>
+<td title='com.quickbite.service.PuntosServiceTest.consultarHistorial_cuandoExistenMovimientos_debeRetornarTodos()'><b>consultarHistorial_cuandoExistenMovimientos_debeRetornarTodos</b><br>Test class: com.quickbite.service.PuntosServiceTest<br>Test method: HU8 - Éxito: Historial refleja todos los movimientos realizados</td>
+<td></td>
+<td>0</td>
+<td>com.quickbite.service.PuntosServiceTest@25fb8912</td></tr>
+<tr>
+<td title='com.quickbite.service.PuntosServiceTest.obtenerTotalAcumulado_cuandoSinMovimientos_debeRetornarCero()'><b>obtenerTotalAcumulado_cuandoSinMovimientos_debeRetornarCero</b><br>Test class: com.quickbite.service.PuntosServiceTest<br>Test method: HU10 - Fallo: Total acumulado sin movimientos debe retornar cero</td>
+<td></td>
+<td>0</td>
+<td>com.quickbite.service.PuntosServiceTest@25fb8912</td></tr>
+<tr>
+<td title='com.quickbite.service.PuntosServiceTest.acumularPuntos_cuandoSuscripcionActiva_debeIncrementarPuntosDeLealtad()'><b>acumularPuntos_cuandoSuscripcionActiva_debeIncrementarPuntosDeLealtad</b><br>Test class: com.quickbite.service.PuntosServiceTest<br>Test method: HU4 - Éxito: Acumular puntos por pedido en suscripción activa</td>
+<td></td>
+<td>0</td>
+<td>com.quickbite.service.PuntosServiceTest@25fb8912</td></tr>
+<tr>
+<td title='com.quickbite.service.PuntosServiceTest.consultarHistorial_cuandoSinMovimientos_debeRetornarListaVacia()'><b>consultarHistorial_cuandoSinMovimientos_debeRetornarListaVacia</b><br>Test class: com.quickbite.service.PuntosServiceTest<br>Test method: HU8 - Éxito: Historial vacío cuando no hay movimientos</td>
+<td></td>
+<td>0</td>
+<td>com.quickbite.service.PuntosServiceTest@25fb8912</td></tr>
+<tr>
+<td title='com.quickbite.service.PuntosServiceTest.obtenerTotalAcumulado_cuandoVariosPedidos_debeRetornarSumaCorrecta()'><b>obtenerTotalAcumulado_cuandoVariosPedidos_debeRetornarSumaCorrecta</b><br>Test class: com.quickbite.service.PuntosServiceTest<br>Test method: HU10 - Éxito: Total acumulado suma correctamente todos los pedidos</td>
+<td></td>
+<td>0</td>
+<td>com.quickbite.service.PuntosServiceTest@25fb8912</td></tr>
+<tr>
+<td title='com.quickbite.service.PuntosServiceTest.canjearRecompensa_cuandoRecompensaNoDisponible_debeLanzarExcepcion()'><b>canjearRecompensa_cuandoRecompensaNoDisponible_debeLanzarExcepcion</b><br>Test class: com.quickbite.service.PuntosServiceTest<br>Test method: HU5 - Fallo: Canjear recompensa no disponible debe lanzar excepción</td>
+<td><div><pre>java.lang.IllegalArgumentException: La recompensa no está disponible o es nula.
+	at com.quickbite.service.PuntosService.canjearRecompensa(PuntosService.java:73)
+	at com.quickbite.service.PuntosServiceTest.canjearRecompensa_cuandoRecompensaNoDisponible_debeLanzarExcepcion(PuntosServiceTest.java:140)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace823914581", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace823914581'><pre>java.lang.IllegalArgumentException: La recompensa no está disponible o es nula.
+	at com.quickbite.service.PuntosService.canjearRecompensa(PuntosService.java:73)
+	at com.quickbite.service.PuntosServiceTest.canjearRecompensa_cuandoRecompensaNoDisponible_debeLanzarExcepcion(PuntosServiceTest.java:140)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.quickbite.service.PuntosServiceTest@25fb8912</td></tr>
+<tr>
+<td title='com.quickbite.service.PuntosServiceTest.canjearRecompensa_cuandoPuntosInsuficientes_debeLanzarExcepcion()'><b>canjearRecompensa_cuandoPuntosInsuficientes_debeLanzarExcepcion</b><br>Test class: com.quickbite.service.PuntosServiceTest<br>Test method: HU5 - Fallo: Canjear recompensa con puntos insuficientes debe lanzar excepción</td>
+<td><div><pre>com.quickbite.exception.PuntosInsuficientesException: Puntos insuficientes. Disponibles: 50, Requeridos: 200
+	at com.quickbite.service.PuntosService.canjearRecompensa(PuntosService.java:81)
+	at com.quickbite.service.PuntosServiceTest.canjearRecompensa_cuandoPuntosInsuficientes_debeLanzarExcepcion(PuntosServiceTest.java:126)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1236444285", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1236444285'><pre>com.quickbite.exception.PuntosInsuficientesException: Puntos insuficientes. Disponibles: 50, Requeridos: 200
+	at com.quickbite.service.PuntosService.canjearRecompensa(PuntosService.java:81)
+	at com.quickbite.service.PuntosServiceTest.canjearRecompensa_cuandoPuntosInsuficientes_debeLanzarExcepcion(PuntosServiceTest.java:126)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.quickbite.service.PuntosServiceTest@25fb8912</td></tr>
+<tr>
+<td title='com.quickbite.service.PuntosServiceTest.acumularPuntos_cuandoCantidadNegativa_debeLanzarExcepcion()'><b>acumularPuntos_cuandoCantidadNegativa_debeLanzarExcepcion</b><br>Test class: com.quickbite.service.PuntosServiceTest<br>Test method: HU4 - Fallo: Acumular cantidad negativa debe lanzar excepción</td>
+<td><div><pre>java.lang.IllegalArgumentException: La cantidad de puntos a acumular debe ser mayor a 0.
+	at com.quickbite.service.PuntosService.acumularPuntos(PuntosService.java:46)
+	at com.quickbite.service.PuntosServiceTest.acumularPuntos_cuandoCantidadNegativa_debeLanzarExcepcion(PuntosServiceTest.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1777238524", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1777238524'><pre>java.lang.IllegalArgumentException: La cantidad de puntos a acumular debe ser mayor a 0.
+	at com.quickbite.service.PuntosService.acumularPuntos(PuntosService.java:46)
+	at com.quickbite.service.PuntosServiceTest.acumularPuntos_cuandoCantidadNegativa_debeLanzarExcepcion(PuntosServiceTest.java:80)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.quickbite.service.PuntosServiceTest@25fb8912</td></tr>
+<tr>
+<td title='com.quickbite.service.PuntosServiceTest.canjearRecompensa_cuandoPuntosSuficientes_debeDescontarPuntosDeLealtad()'><b>canjearRecompensa_cuandoPuntosSuficientes_debeDescontarPuntosDeLealtad</b><br>Test class: com.quickbite.service.PuntosServiceTest<br>Test method: HU5 - Éxito: Canjear recompensa con puntos suficientes debe descontar puntos</td>
+<td></td>
+<td>0</td>
+<td>com.quickbite.service.PuntosServiceTest@25fb8912</td></tr>
+<tr>
+<td title='com.quickbite.service.PuntosServiceTest.obtenerTotalCanjeado_cuandoVariosCanjes_debeRetornarSumaCorrecta()'><b>obtenerTotalCanjeado_cuandoVariosCanjes_debeRetornarSumaCorrecta</b><br>Test class: com.quickbite.service.PuntosServiceTest<br>Test method: HU10 - Éxito: Total canjeado suma correctamente todos los canjes</td>
+<td></td>
+<td>0</td>
+<td>com.quickbite.service.PuntosServiceTest@25fb8912</td></tr>
+<tr>
+<td title='com.quickbite.service.PuntosServiceTest.consultarHistorial_cuandoSuscripcionNoExiste_debeLanzarExcepcion()'><b>consultarHistorial_cuandoSuscripcionNoExiste_debeLanzarExcepcion</b><br>Test class: com.quickbite.service.PuntosServiceTest<br>Test method: HU8 - Fallo: Historial de suscripción inexistente debe lanzar excepción</td>
+<td><div><pre>com.quickbite.exception.SuscripcionNoEncontradaException: No se encontro una suscripcion con el ID: SUB-INEXISTENTE
+	at com.quickbite.service.PuntosService.lambda$obtenerSuscripcionOLanzarExcepcion$0(PuntosService.java:144)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.quickbite.service.PuntosService.obtenerSuscripcionOLanzarExcepcion(PuntosService.java:144)
+	at com.quickbite.service.PuntosService.consultarHistorial(PuntosService.java:102)
+	at com.quickbite.service.PuntosServiceTest.consultarHistorial_cuandoSuscripcionNoExiste_debeLanzarExcepcion(PuntosServiceTest.java:197)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace366252104", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace366252104'><pre>com.quickbite.exception.SuscripcionNoEncontradaException: No se encontro una suscripcion con el ID: SUB-INEXISTENTE
+	at com.quickbite.service.PuntosService.lambda$obtenerSuscripcionOLanzarExcepcion$0(PuntosService.java:144)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.quickbite.service.PuntosService.obtenerSuscripcionOLanzarExcepcion(PuntosService.java:144)
+	at com.quickbite.service.PuntosService.consultarHistorial(PuntosService.java:102)
+	at com.quickbite.service.PuntosServiceTest.consultarHistorial_cuandoSuscripcionNoExiste_debeLanzarExcepcion(PuntosServiceTest.java:197)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.quickbite.service.PuntosServiceTest@25fb8912</td></tr>
+<tr>
+<td title='com.quickbite.service.PuntosServiceTest.acumularPuntos_cuandoSuscripcionNoExiste_debeLanzarExcepcion()'><b>acumularPuntos_cuandoSuscripcionNoExiste_debeLanzarExcepcion</b><br>Test class: com.quickbite.service.PuntosServiceTest<br>Test method: HU4 - Fallo: Acumular puntos en suscripción inexistente debe lanzar excepción</td>
+<td><div><pre>com.quickbite.exception.SuscripcionNoEncontradaException: No se encontro una suscripcion con el ID: SUB-INEXISTENTE
+	at com.quickbite.service.PuntosService.lambda$obtenerSuscripcionOLanzarExcepcion$0(PuntosService.java:144)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.quickbite.service.PuntosService.obtenerSuscripcionOLanzarExcepcion(PuntosService.java:144)
+	at com.quickbite.service.PuntosService.obtenerSuscripcionActivaOLanzarExcepcion(PuntosService.java:135)
+	at com.quickbite.service.PuntosService.acumularPuntos(PuntosService.java:48)
+	at com.quickbite.service.PuntosServiceTest.acumularPuntos_cuandoSuscripcionNoExiste_debeLanzarExcepcion(PuntosServiceTest.java:91)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace332873513", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace332873513'><pre>com.quickbite.exception.SuscripcionNoEncontradaException: No se encontro una suscripcion con el ID: SUB-INEXISTENTE
+	at com.quickbite.service.PuntosService.lambda$obtenerSuscripcionOLanzarExcepcion$0(PuntosService.java:144)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.quickbite.service.PuntosService.obtenerSuscripcionOLanzarExcepcion(PuntosService.java:144)
+	at com.quickbite.service.PuntosService.obtenerSuscripcionActivaOLanzarExcepcion(PuntosService.java:135)
+	at com.quickbite.service.PuntosService.acumularPuntos(PuntosService.java:48)
+	at com.quickbite.service.PuntosServiceTest.acumularPuntos_cuandoSuscripcionNoExiste_debeLanzarExcepcion(PuntosServiceTest.java:91)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.quickbite.service.PuntosServiceTest@25fb8912</td></tr>
+<tr>
+<td title='com.quickbite.service.PuntosServiceTest.canjearRecompensa_cuandoSuscripcionInactiva_debeLanzarExcepcion()'><b>canjearRecompensa_cuandoSuscripcionInactiva_debeLanzarExcepcion</b><br>Test class: com.quickbite.service.PuntosServiceTest<br>Test method: HU5 - Fallo: Canjear recompensa en suscripción inactiva debe lanzar excepción</td>
+<td><div><pre>com.quickbite.exception.SuscripcionInactivaException: La suscripcion con ID: SUB-001 se encuentra inactiva.
+	at com.quickbite.service.PuntosService.obtenerSuscripcionActivaOLanzarExcepcion(PuntosService.java:137)
+	at com.quickbite.service.PuntosService.canjearRecompensa(PuntosService.java:75)
+	at com.quickbite.service.PuntosServiceTest.canjearRecompensa_cuandoSuscripcionInactiva_debeLanzarExcepcion(PuntosServiceTest.java:154)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2100440237", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2100440237'><pre>com.quickbite.exception.SuscripcionInactivaException: La suscripcion con ID: SUB-001 se encuentra inactiva.
+	at com.quickbite.service.PuntosService.obtenerSuscripcionActivaOLanzarExcepcion(PuntosService.java:137)
+	at com.quickbite.service.PuntosService.canjearRecompensa(PuntosService.java:75)
+	at com.quickbite.service.PuntosServiceTest.canjearRecompensa_cuandoSuscripcionInactiva_debeLanzarExcepcion(PuntosServiceTest.java:154)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.quickbite.service.PuntosServiceTest@25fb8912</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="0.766" tests="38" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/danielrojas/utn/calidad/proyecto1/com.quickbite/target/test-classes:/Users/danielrojas/utn/calidad/proyecto1/com.quickbite/target/classes:/Users/danielrojas/.m2/repository/org/testng/testng/7.8.0/testng-7.8.0.jar:/Users/danielrojas/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/danielrojas/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/danielrojas/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="America/Costa_Rica"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="419"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/temurin-25.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/danielrojas/utn/calidad/proyecto1/com.quickbite/target/surefire/surefirebooter-20260301174420406_3.jar /Users/danielrojas/utn/calidad/proyecto1/com.quickbite/target/surefire 2026-03-01T17-44-20_303-jvmRun1 surefire-20260301174420406_1tmp surefire_0-20260301174420406_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/danielrojas/utn/calidad/proyecto1/com.quickbite/target/test-classes:/Users/danielrojas/utn/calidad/proyecto1/com.quickbite/target/classes:/Users/danielrojas/.m2/repository/org/testng/testng/7.8.0/testng-7.8.0.jar:/Users/danielrojas/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/danielrojas/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/danielrojas/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/danielrojas"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/temurin-25.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/danielrojas/utn/calidad/proyecto1/com.quickbite"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/danielrojas/utn/calidad/proyecto1/com.quickbite/target/surefire/surefirebooter-20260301174420406_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="25.0.2+10-LTS"/>
+    <property name="user.name" value="danielrojas"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="13.7.8"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-25.0.2+10"/>
+    <property name="localRepository" value="/Users/danielrojas/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/hz/fktqdypn5776nrgdrkt7hf440000gn/T/"/>
+    <property name="java.version" value="25.0.2"/>
+    <property name="user.dir" value="/Users/danielrojas/utn/calidad/proyecto1/com.quickbite"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/danielrojas/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="25.0.2+10-LTS"/>
+    <property name="stdin.encoding" value="UTF-8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="activarSuscripcion_cuandoNoExiste_debeLanzarExcepcion" classname="com.quickbite.service.SuscripcionServiceTest" time="0.002">
+    <system-out><![CDATA[...
+... TestNG 7.8.0 by Cédric Beust (cedric@beust.com)
+...
+
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="activarSuscripcion_cuandoSuscripcionInactiva_debeQuedarActiva" classname="com.quickbite.service.SuscripcionServiceTest" time="0.018"/>
+  <testcase name="consultarEstado_cuandoSuscripcionActiva_debeRetornarActiva" classname="com.quickbite.service.SuscripcionServiceTest" time="0.001"/>
+  <testcase name="consultarEstado_cuandoSuscripcionNoExiste_debeLanzarExcepcion" classname="com.quickbite.service.SuscripcionServiceTest" time="0.0"/>
+  <testcase name="desactivarSuscripcion_cuandoNoExiste_debeLanzarExcepcion" classname="com.quickbite.service.SuscripcionServiceTest" time="0.001"/>
+  <testcase name="desactivarSuscripcion_cuandoSuscripcionActiva_debeQuedarInactiva" classname="com.quickbite.service.SuscripcionServiceTest" time="0.001"/>
+  <testcase name="obtenerSuscripcionesActivas_cuandoExistenVarias_debeRetornarSoloActivas" classname="com.quickbite.service.SuscripcionServiceTest" time="0.001"/>
+  <testcase name="obtenerSuscripcionesActivas_cuandoRepositorioVacio_debeRetornarListaVacia" classname="com.quickbite.service.SuscripcionServiceTest" time="0.001"/>
+  <testcase name="obtenerSuscripcionesInactivas_cuandoExistenVarias_debeRetornarSoloInactivas" classname="com.quickbite.service.SuscripcionServiceTest" time="0.001"/>
+  <testcase name="registrarSuscripcion_cuandoClienteIdVacio_debeLanzarExcepcion" classname="com.quickbite.service.SuscripcionServiceTest" time="0.001"/>
+  <testcase name="registrarSuscripcion_cuandoDatosValidos_debeRetornarSuscripcionActiva" classname="com.quickbite.service.SuscripcionServiceTest" time="0.0"/>
+  <testcase name="registrarSuscripcion_cuandoIdDuplicado_debeLanzarExcepcion" classname="com.quickbite.service.SuscripcionServiceTest" time="0.001"/>
+  <testcase name="registrarSuscripcion_cuandoIdNulo_debeLanzarExcepcion" classname="com.quickbite.service.SuscripcionServiceTest" time="0.0"/>
+  <testcase name="acumularPuntos_cuandoCantidadNegativa_debeLanzarExcepcion" classname="com.quickbite.service.PuntosServiceTest" time="0.0"/>
+  <testcase name="acumularPuntos_cuandoSuscripcionActiva_debeIncrementarPuntosDeLealtad" classname="com.quickbite.service.PuntosServiceTest" time="0.002"/>
+  <testcase name="acumularPuntos_cuandoSuscripcionInactiva_debeLanzarExcepcion" classname="com.quickbite.service.PuntosServiceTest" time="0.001"/>
+  <testcase name="acumularPuntos_cuandoSuscripcionNoExiste_debeLanzarExcepcion" classname="com.quickbite.service.PuntosServiceTest" time="0.001"/>
+  <testcase name="canjearRecompensa_cuandoPuntosInsuficientes_debeLanzarExcepcion" classname="com.quickbite.service.PuntosServiceTest" time="0.003"/>
+  <testcase name="canjearRecompensa_cuandoPuntosSuficientes_debeDescontarPuntosDeLealtad" classname="com.quickbite.service.PuntosServiceTest" time="0.001"/>
+  <testcase name="canjearRecompensa_cuandoRecompensaNoDisponible_debeLanzarExcepcion" classname="com.quickbite.service.PuntosServiceTest" time="0.001"/>
+  <testcase name="canjearRecompensa_cuandoSuscripcionInactiva_debeLanzarExcepcion" classname="com.quickbite.service.PuntosServiceTest" time="0.001"/>
+  <testcase name="consultarHistorial_cuandoExistenMovimientos_debeRetornarTodos" classname="com.quickbite.service.PuntosServiceTest" time="0.002"/>
+  <testcase name="consultarHistorial_cuandoSinMovimientos_debeRetornarListaVacia" classname="com.quickbite.service.PuntosServiceTest" time="0.001"/>
+  <testcase name="consultarHistorial_cuandoSuscripcionNoExiste_debeLanzarExcepcion" classname="com.quickbite.service.PuntosServiceTest" time="0.001"/>
+  <testcase name="obtenerTotalAcumulado_cuandoSinMovimientos_debeRetornarCero" classname="com.quickbite.service.PuntosServiceTest" time="0.003"/>
+  <testcase name="obtenerTotalAcumulado_cuandoVariosPedidos_debeRetornarSumaCorrecta" classname="com.quickbite.service.PuntosServiceTest" time="0.001"/>
+  <testcase name="obtenerTotalCanjeado_cuandoVariosCanjes_debeRetornarSumaCorrecta" classname="com.quickbite.service.PuntosServiceTest" time="0.001"/>
+  <testcase name="definirReglaAcumulacion_cuandoDatosValidos_debeCrearReglaActiva" classname="com.quickbite.service.ReglasServiceTest" time="0.001"/>
+  <testcase name="definirReglaAcumulacion_cuandoIdDuplicado_debeLanzarExcepcion" classname="com.quickbite.service.ReglasServiceTest" time="0.001"/>
+  <testcase name="definirReglaAcumulacion_cuandoPuntosCero_debeLanzarExcepcion" classname="com.quickbite.service.ReglasServiceTest" time="0.001"/>
+  <testcase name="definirReglaRedencion_cuandoDatosValidos_debeCrearReglaActiva" classname="com.quickbite.service.ReglasServiceTest" time="0.001"/>
+  <testcase name="definirReglaRedencion_cuandoIdDuplicado_debeLanzarExcepcion" classname="com.quickbite.service.ReglasServiceTest" time="0.001"/>
+  <testcase name="definirReglaRedencion_cuandoPuntosNegativos_debeLanzarExcepcion" classname="com.quickbite.service.ReglasServiceTest" time="0.001"/>
+  <testcase name="obtenerReglaAcumulacionActiva_cuandoExisteReglaActiva_debeRetornarla" classname="com.quickbite.service.ReglasServiceTest" time="0.001"/>
+  <testcase name="obtenerReglaAcumulacionActiva_cuandoNoHayReglas_debeRetornarOptionalVacio" classname="com.quickbite.service.ReglasServiceTest" time="0.0"/>
+  <testcase name="obtenerReglaRedencionActiva_cuandoExisteReglaActiva_debeRetornarla" classname="com.quickbite.service.ReglasServiceTest" time="0.0"/>
+  <testcase name="obtenerReglaRedencionActiva_cuandoNoHayReglas_debeRetornarOptionalVacio" classname="com.quickbite.service.ReglasServiceTest" time="0.0"/>
+  <testcase name="obtenerReglasAcumulacion_cuandoExisteUnaRegla_debeRetornarListaConUnElemento" classname="com.quickbite.service.ReglasServiceTest" time="0.0"/>
+</testsuite>

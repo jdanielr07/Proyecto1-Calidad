@@ -1,0 +1,16 @@
+/Users/danielrojas/utn/calidad/proyecto1/com.quickbite/src/main/java/com/quickbite/exception/PuntosInsuficientesException.java
+/Users/danielrojas/utn/calidad/proyecto1/com.quickbite/src/main/java/com/quickbite/exception/SuscripcionInactivaException.java
+/Users/danielrojas/utn/calidad/proyecto1/com.quickbite/src/main/java/com/quickbite/exception/SuscripcionNoEncontradaException.java
+/Users/danielrojas/utn/calidad/proyecto1/com.quickbite/src/main/java/com/quickbite/model/Cliente.java
+/Users/danielrojas/utn/calidad/proyecto1/com.quickbite/src/main/java/com/quickbite/model/EstadoSuscripcion.java
+/Users/danielrojas/utn/calidad/proyecto1/com.quickbite/src/main/java/com/quickbite/model/MovimientoPuntos.java
+/Users/danielrojas/utn/calidad/proyecto1/com.quickbite/src/main/java/com/quickbite/model/Recompensa.java
+/Users/danielrojas/utn/calidad/proyecto1/com.quickbite/src/main/java/com/quickbite/model/ReglaAcumulacion.java
+/Users/danielrojas/utn/calidad/proyecto1/com.quickbite/src/main/java/com/quickbite/model/ReglaRedencion.java
+/Users/danielrojas/utn/calidad/proyecto1/com.quickbite/src/main/java/com/quickbite/model/Suscripcion.java
+/Users/danielrojas/utn/calidad/proyecto1/com.quickbite/src/main/java/com/quickbite/model/TipoMovimiento.java
+/Users/danielrojas/utn/calidad/proyecto1/com.quickbite/src/main/java/com/quickbite/repository/PuntosRepository.java
+/Users/danielrojas/utn/calidad/proyecto1/com.quickbite/src/main/java/com/quickbite/repository/SuscripcionRepository.java
+/Users/danielrojas/utn/calidad/proyecto1/com.quickbite/src/main/java/com/quickbite/service/PuntosService.java
+/Users/danielrojas/utn/calidad/proyecto1/com.quickbite/src/main/java/com/quickbite/service/ReglasService.java
+/Users/danielrojas/utn/calidad/proyecto1/com.quickbite/src/main/java/com/quickbite/service/SuscripcionService.java

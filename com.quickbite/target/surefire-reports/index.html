@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" class="navigator-link">
+              <span class="suite-name border-passed">Suite - QuickBite Loyalty Program</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite___QuickBite_Loyalty_Program" class="navigator-link ">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite___QuickBite_Loyalty_Program" class="navigator-link ">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite___QuickBite_Loyalty_Program" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite___QuickBite_Loyalty_Program" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite___QuickBite_Loyalty_Program" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite___QuickBite_Loyalty_Program" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite___QuickBite_Loyalty_Program" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">38 methods,   38 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" class="hide-methods passed suite-Suite___QuickBite_Loyalty_Program"> (hide)</a> <!-- hide-methods passed suite-Suite___QuickBite_Loyalty_Program -->
+                      <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" class="show-methods passed suite-Suite___QuickBite_Loyalty_Program"> (show)</a> <!-- show-methods passed suite-Suite___QuickBite_Loyalty_Program -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite___QuickBite_Loyalty_Program">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.SuscripcionServiceTest" class="method navigator-link" hash-for-method="activarSuscripcion_cuandoNoExiste_debeLanzarExcepcion">activarSuscripcion_cuandoNoExiste_debeLanzarExcepcion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.SuscripcionServiceTest" class="method navigator-link" hash-for-method="activarSuscripcion_cuandoSuscripcionInactiva_debeQuedarActiva">activarSuscripcion_cuandoSuscripcionInactiva_debeQuedarActiva</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.PuntosServiceTest" class="method navigator-link" hash-for-method="acumularPuntos_cuandoCantidadNegativa_debeLanzarExcepcion">acumularPuntos_cuandoCantidadNegativa_debeLanzarExcepcion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.PuntosServiceTest" class="method navigator-link" hash-for-method="acumularPuntos_cuandoSuscripcionActiva_debeIncrementarPuntosDeLealtad">acumularPuntos_cuandoSuscripcionActiva_debeIncrementarPuntosDeLealtad</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.PuntosServiceTest" class="method navigator-link" hash-for-method="acumularPuntos_cuandoSuscripcionInactiva_debeLanzarExcepcion">acumularPuntos_cuandoSuscripcionInactiva_debeLanzarExcepcion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.PuntosServiceTest" class="method navigator-link" hash-for-method="acumularPuntos_cuandoSuscripcionNoExiste_debeLanzarExcepcion">acumularPuntos_cuandoSuscripcionNoExiste_debeLanzarExcepcion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.PuntosServiceTest" class="method navigator-link" hash-for-method="canjearRecompensa_cuandoPuntosInsuficientes_debeLanzarExcepcion">canjearRecompensa_cuandoPuntosInsuficientes_debeLanzarExcepcion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.PuntosServiceTest" class="method navigator-link" hash-for-method="canjearRecompensa_cuandoPuntosSuficientes_debeDescontarPuntosDeLealtad">canjearRecompensa_cuandoPuntosSuficientes_debeDescontarPuntosDeLealtad</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.PuntosServiceTest" class="method navigator-link" hash-for-method="canjearRecompensa_cuandoRecompensaNoDisponible_debeLanzarExcepcion">canjearRecompensa_cuandoRecompensaNoDisponible_debeLanzarExcepcion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.PuntosServiceTest" class="method navigator-link" hash-for-method="canjearRecompensa_cuandoSuscripcionInactiva_debeLanzarExcepcion">canjearRecompensa_cuandoSuscripcionInactiva_debeLanzarExcepcion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.SuscripcionServiceTest" class="method navigator-link" hash-for-method="consultarEstado_cuandoSuscripcionActiva_debeRetornarActiva">consultarEstado_cuandoSuscripcionActiva_debeRetornarActiva</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.SuscripcionServiceTest" class="method navigator-link" hash-for-method="consultarEstado_cuandoSuscripcionNoExiste_debeLanzarExcepcion">consultarEstado_cuandoSuscripcionNoExiste_debeLanzarExcepcion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.PuntosServiceTest" class="method navigator-link" hash-for-method="consultarHistorial_cuandoExistenMovimientos_debeRetornarTodos">consultarHistorial_cuandoExistenMovimientos_debeRetornarTodos</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.PuntosServiceTest" class="method navigator-link" hash-for-method="consultarHistorial_cuandoSinMovimientos_debeRetornarListaVacia">consultarHistorial_cuandoSinMovimientos_debeRetornarListaVacia</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.PuntosServiceTest" class="method navigator-link" hash-for-method="consultarHistorial_cuandoSuscripcionNoExiste_debeLanzarExcepcion">consultarHistorial_cuandoSuscripcionNoExiste_debeLanzarExcepcion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.ReglasServiceTest" class="method navigator-link" hash-for-method="definirReglaAcumulacion_cuandoDatosValidos_debeCrearReglaActiva">definirReglaAcumulacion_cuandoDatosValidos_debeCrearReglaActiva</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.ReglasServiceTest" class="method navigator-link" hash-for-method="definirReglaAcumulacion_cuandoIdDuplicado_debeLanzarExcepcion">definirReglaAcumulacion_cuandoIdDuplicado_debeLanzarExcepcion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.ReglasServiceTest" class="method navigator-link" hash-for-method="definirReglaAcumulacion_cuandoPuntosCero_debeLanzarExcepcion">definirReglaAcumulacion_cuandoPuntosCero_debeLanzarExcepcion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.ReglasServiceTest" class="method navigator-link" hash-for-method="definirReglaRedencion_cuandoDatosValidos_debeCrearReglaActiva">definirReglaRedencion_cuandoDatosValidos_debeCrearReglaActiva</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.ReglasServiceTest" class="method navigator-link" hash-for-method="definirReglaRedencion_cuandoIdDuplicado_debeLanzarExcepcion">definirReglaRedencion_cuandoIdDuplicado_debeLanzarExcepcion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.ReglasServiceTest" class="method navigator-link" hash-for-method="definirReglaRedencion_cuandoPuntosNegativos_debeLanzarExcepcion">definirReglaRedencion_cuandoPuntosNegativos_debeLanzarExcepcion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.SuscripcionServiceTest" class="method navigator-link" hash-for-method="desactivarSuscripcion_cuandoNoExiste_debeLanzarExcepcion">desactivarSuscripcion_cuandoNoExiste_debeLanzarExcepcion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.SuscripcionServiceTest" class="method navigator-link" hash-for-method="desactivarSuscripcion_cuandoSuscripcionActiva_debeQuedarInactiva">desactivarSuscripcion_cuandoSuscripcionActiva_debeQuedarInactiva</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.ReglasServiceTest" class="method navigator-link" hash-for-method="obtenerReglaAcumulacionActiva_cuandoExisteReglaActiva_debeRetornarla">obtenerReglaAcumulacionActiva_cuandoExisteReglaActiva_debeRetornarla</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.ReglasServiceTest" class="method navigator-link" hash-for-method="obtenerReglaAcumulacionActiva_cuandoNoHayReglas_debeRetornarOptionalVacio">obtenerReglaAcumulacionActiva_cuandoNoHayReglas_debeRetornarOptionalVacio</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.ReglasServiceTest" class="method navigator-link" hash-for-method="obtenerReglaRedencionActiva_cuandoExisteReglaActiva_debeRetornarla">obtenerReglaRedencionActiva_cuandoExisteReglaActiva_debeRetornarla</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.ReglasServiceTest" class="method navigator-link" hash-for-method="obtenerReglaRedencionActiva_cuandoNoHayReglas_debeRetornarOptionalVacio">obtenerReglaRedencionActiva_cuandoNoHayReglas_debeRetornarOptionalVacio</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.ReglasServiceTest" class="method navigator-link" hash-for-method="obtenerReglasAcumulacion_cuandoExisteUnaRegla_debeRetornarListaConUnElemento">obtenerReglasAcumulacion_cuandoExisteUnaRegla_debeRetornarListaConUnElemento</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.SuscripcionServiceTest" class="method navigator-link" hash-for-method="obtenerSuscripcionesActivas_cuandoExistenVarias_debeRetornarSoloActivas">obtenerSuscripcionesActivas_cuandoExistenVarias_debeRetornarSoloActivas</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.SuscripcionServiceTest" class="method navigator-link" hash-for-method="obtenerSuscripcionesActivas_cuandoRepositorioVacio_debeRetornarListaVacia">obtenerSuscripcionesActivas_cuandoRepositorioVacio_debeRetornarListaVacia</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.SuscripcionServiceTest" class="method navigator-link" hash-for-method="obtenerSuscripcionesInactivas_cuandoExistenVarias_debeRetornarSoloInactivas">obtenerSuscripcionesInactivas_cuandoExistenVarias_debeRetornarSoloInactivas</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.PuntosServiceTest" class="method navigator-link" hash-for-method="obtenerTotalAcumulado_cuandoSinMovimientos_debeRetornarCero">obtenerTotalAcumulado_cuandoSinMovimientos_debeRetornarCero</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.PuntosServiceTest" class="method navigator-link" hash-for-method="obtenerTotalAcumulado_cuandoVariosPedidos_debeRetornarSumaCorrecta">obtenerTotalAcumulado_cuandoVariosPedidos_debeRetornarSumaCorrecta</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.PuntosServiceTest" class="method navigator-link" hash-for-method="obtenerTotalCanjeado_cuandoVariosCanjes_debeRetornarSumaCorrecta">obtenerTotalCanjeado_cuandoVariosCanjes_debeRetornarSumaCorrecta</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.SuscripcionServiceTest" class="method navigator-link" hash-for-method="registrarSuscripcion_cuandoClienteIdVacio_debeLanzarExcepcion">registrarSuscripcion_cuandoClienteIdVacio_debeLanzarExcepcion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.SuscripcionServiceTest" class="method navigator-link" hash-for-method="registrarSuscripcion_cuandoDatosValidos_debeRetornarSuscripcionActiva">registrarSuscripcion_cuandoDatosValidos_debeRetornarSuscripcionActiva</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.SuscripcionServiceTest" class="method navigator-link" hash-for-method="registrarSuscripcion_cuandoIdDuplicado_debeLanzarExcepcion">registrarSuscripcion_cuandoIdDuplicado_debeLanzarExcepcion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite___QuickBite_Loyalty_Program" title="com.quickbite.service.SuscripcionServiceTest" class="method navigator-link" hash-for-method="registrarSuscripcion_cuandoIdNulo_debeLanzarExcepcion">registrarSuscripcion_cuandoIdNulo_debeLanzarExcepcion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite___QuickBite_Loyalty_Program -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite___QuickBite_Loyalty_Program" class="panel Suite___QuickBite_Loyalty_Program">
+          <div class="suite-Suite___QuickBite_Loyalty_Program-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.quickbite.service.ReglasServiceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="definirReglaAcumulacion_cuandoDatosValidos_debeCrearReglaActiva">
+                  </a> <!-- definirReglaAcumulacion_cuandoDatosValidos_debeCrearReglaActiva -->
+                  <span class="method-name">definirReglaAcumulacion_cuandoDatosValidos_debeCrearReglaActiva</span>
+                  <em>
+(HU6 - Exito: Definir regla de acumulacion valida)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="definirReglaAcumulacion_cuandoIdDuplicado_debeLanzarExcepcion">
+                  </a> <!-- definirReglaAcumulacion_cuandoIdDuplicado_debeLanzarExcepcion -->
+                  <span class="method-name">definirReglaAcumulacion_cuandoIdDuplicado_debeLanzarExcepcion</span>
+                  <em>
+(HU6 - Fallo: ID duplicado lanza excepcion)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="definirReglaAcumulacion_cuandoPuntosCero_debeLanzarExcepcion">
+                  </a> <!-- definirReglaAcumulacion_cuandoPuntosCero_debeLanzarExcepcion -->
+                  <span class="method-name">definirReglaAcumulacion_cuandoPuntosCero_debeLanzarExcepcion</span>
+                  <em>
+(HU6 - Fallo: Puntos cero lanza excepcion)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="definirReglaRedencion_cuandoDatosValidos_debeCrearReglaActiva">
+                  </a> <!-- definirReglaRedencion_cuandoDatosValidos_debeCrearReglaActiva -->
+                  <span class="method-name">definirReglaRedencion_cuandoDatosValidos_debeCrearReglaActiva</span>
+                  <em>
+(HU7 - Exito: Definir regla de redencion valida)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="definirReglaRedencion_cuandoIdDuplicado_debeLanzarExcepcion">
+                  </a> <!-- definirReglaRedencion_cuandoIdDuplicado_debeLanzarExcepcion -->
+                  <span class="method-name">definirReglaRedencion_cuandoIdDuplicado_debeLanzarExcepcion</span>
+                  <em>
+(HU7 - Fallo: ID duplicado lanza excepcion)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="definirReglaRedencion_cuandoPuntosNegativos_debeLanzarExcepcion">
+                  </a> <!-- definirReglaRedencion_cuandoPuntosNegativos_debeLanzarExcepcion -->
+                  <span class="method-name">definirReglaRedencion_cuandoPuntosNegativos_debeLanzarExcepcion</span>
+                  <em>
+(HU7 - Fallo: Puntos negativos lanza excepcion)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="obtenerReglaAcumulacionActiva_cuandoExisteReglaActiva_debeRetornarla">
+                  </a> <!-- obtenerReglaAcumulacionActiva_cuandoExisteReglaActiva_debeRetornarla -->
+                  <span class="method-name">obtenerReglaAcumulacionActiva_cuandoExisteReglaActiva_debeRetornarla</span>
+                  <em>
+(HU6 - Exito: Regla activa es recuperada correctamente)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="obtenerReglaAcumulacionActiva_cuandoNoHayReglas_debeRetornarOptionalVacio">
+                  </a> <!-- obtenerReglaAcumulacionActiva_cuandoNoHayReglas_debeRetornarOptionalVacio -->
+                  <span class="method-name">obtenerReglaAcumulacionActiva_cuandoNoHayReglas_debeRetornarOptionalVacio</span>
+                  <em>
+(HU6 - Fallo: Sin reglas retorna Optional vacio)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="obtenerReglaRedencionActiva_cuandoExisteReglaActiva_debeRetornarla">
+                  </a> <!-- obtenerReglaRedencionActiva_cuandoExisteReglaActiva_debeRetornarla -->
+                  <span class="method-name">obtenerReglaRedencionActiva_cuandoExisteReglaActiva_debeRetornarla</span>
+                  <em>
+(HU7 - Exito: Regla de redencion activa es recuperada)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="obtenerReglaRedencionActiva_cuandoNoHayReglas_debeRetornarOptionalVacio">
+                  </a> <!-- obtenerReglaRedencionActiva_cuandoNoHayReglas_debeRetornarOptionalVacio -->
+                  <span class="method-name">obtenerReglaRedencionActiva_cuandoNoHayReglas_debeRetornarOptionalVacio</span>
+                  <em>
+(HU7 - Fallo: Sin reglas retorna Optional vacio)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="obtenerReglasAcumulacion_cuandoExisteUnaRegla_debeRetornarListaConUnElemento">
+                  </a> <!-- obtenerReglasAcumulacion_cuandoExisteUnaRegla_debeRetornarListaConUnElemento -->
+                  <span class="method-name">obtenerReglasAcumulacion_cuandoExisteUnaRegla_debeRetornarListaConUnElemento</span>
+                  <em>
+(HU6 - Exito: Lista de reglas contiene la regla registrada)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite___QuickBite_Loyalty_Program-class-passed -->
+          <div class="suite-Suite___QuickBite_Loyalty_Program-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.quickbite.service.PuntosServiceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="acumularPuntos_cuandoCantidadNegativa_debeLanzarExcepcion">
+                  </a> <!-- acumularPuntos_cuandoCantidadNegativa_debeLanzarExcepcion -->
+                  <span class="method-name">acumularPuntos_cuandoCantidadNegativa_debeLanzarExcepcion</span>
+                  <em>
+(HU4 - Fallo: Acumular cantidad negativa debe lanzar excepción)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="acumularPuntos_cuandoSuscripcionActiva_debeIncrementarPuntosDeLealtad">
+                  </a> <!-- acumularPuntos_cuandoSuscripcionActiva_debeIncrementarPuntosDeLealtad -->
+                  <span class="method-name">acumularPuntos_cuandoSuscripcionActiva_debeIncrementarPuntosDeLealtad</span>
+                  <em>
+(HU4 - Éxito: Acumular puntos por pedido en suscripción activa)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="acumularPuntos_cuandoSuscripcionInactiva_debeLanzarExcepcion">
+                  </a> <!-- acumularPuntos_cuandoSuscripcionInactiva_debeLanzarExcepcion -->
+                  <span class="method-name">acumularPuntos_cuandoSuscripcionInactiva_debeLanzarExcepcion</span>
+                  <em>
+(HU4 - Fallo: Acumular puntos en suscripción inactiva debe lanzar excepción)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="acumularPuntos_cuandoSuscripcionNoExiste_debeLanzarExcepcion">
+                  </a> <!-- acumularPuntos_cuandoSuscripcionNoExiste_debeLanzarExcepcion -->
+                  <span class="method-name">acumularPuntos_cuandoSuscripcionNoExiste_debeLanzarExcepcion</span>
+                  <em>
+(HU4 - Fallo: Acumular puntos en suscripción inexistente debe lanzar excepción)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="canjearRecompensa_cuandoPuntosInsuficientes_debeLanzarExcepcion">
+                  </a> <!-- canjearRecompensa_cuandoPuntosInsuficientes_debeLanzarExcepcion -->
+                  <span class="method-name">canjearRecompensa_cuandoPuntosInsuficientes_debeLanzarExcepcion</span>
+                  <em>
+(HU5 - Fallo: Canjear recompensa con puntos insuficientes debe lanzar excepción)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="canjearRecompensa_cuandoPuntosSuficientes_debeDescontarPuntosDeLealtad">
+                  </a> <!-- canjearRecompensa_cuandoPuntosSuficientes_debeDescontarPuntosDeLealtad -->
+                  <span class="method-name">canjearRecompensa_cuandoPuntosSuficientes_debeDescontarPuntosDeLealtad</span>
+                  <em>
+(HU5 - Éxito: Canjear recompensa con puntos suficientes debe descontar puntos)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="canjearRecompensa_cuandoRecompensaNoDisponible_debeLanzarExcepcion">
+                  </a> <!-- canjearRecompensa_cuandoRecompensaNoDisponible_debeLanzarExcepcion -->
+                  <span class="method-name">canjearRecompensa_cuandoRecompensaNoDisponible_debeLanzarExcepcion</span>
+                  <em>
+(HU5 - Fallo: Canjear recompensa no disponible debe lanzar excepción)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="canjearRecompensa_cuandoSuscripcionInactiva_debeLanzarExcepcion">
+                  </a> <!-- canjearRecompensa_cuandoSuscripcionInactiva_debeLanzarExcepcion -->
+                  <span class="method-name">canjearRecompensa_cuandoSuscripcionInactiva_debeLanzarExcepcion</span>
+                  <em>
+(HU5 - Fallo: Canjear recompensa en suscripción inactiva debe lanzar excepción)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="consultarHistorial_cuandoExistenMovimientos_debeRetornarTodos">
+                  </a> <!-- consultarHistorial_cuandoExistenMovimientos_debeRetornarTodos -->
+                  <span class="method-name">consultarHistorial_cuandoExistenMovimientos_debeRetornarTodos</span>
+                  <em>
+(HU8 - Éxito: Historial refleja todos los movimientos realizados)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="consultarHistorial_cuandoSinMovimientos_debeRetornarListaVacia">
+                  </a> <!-- consultarHistorial_cuandoSinMovimientos_debeRetornarListaVacia -->
+                  <span class="method-name">consultarHistorial_cuandoSinMovimientos_debeRetornarListaVacia</span>
+                  <em>
+(HU8 - Éxito: Historial vacío cuando no hay movimientos)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="consultarHistorial_cuandoSuscripcionNoExiste_debeLanzarExcepcion">
+                  </a> <!-- consultarHistorial_cuandoSuscripcionNoExiste_debeLanzarExcepcion -->
+                  <span class="method-name">consultarHistorial_cuandoSuscripcionNoExiste_debeLanzarExcepcion</span>
+                  <em>
+(HU8 - Fallo: Historial de suscripción inexistente debe lanzar excepción)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="obtenerTotalAcumulado_cuandoSinMovimientos_debeRetornarCero">
+                  </a> <!-- obtenerTotalAcumulado_cuandoSinMovimientos_debeRetornarCero -->
+                  <span class="method-name">obtenerTotalAcumulado_cuandoSinMovimientos_debeRetornarCero</span>
+                  <em>
+(HU10 - Fallo: Total acumulado sin movimientos debe retornar cero)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="obtenerTotalAcumulado_cuandoVariosPedidos_debeRetornarSumaCorrecta">
+                  </a> <!-- obtenerTotalAcumulado_cuandoVariosPedidos_debeRetornarSumaCorrecta -->
+                  <span class="method-name">obtenerTotalAcumulado_cuandoVariosPedidos_debeRetornarSumaCorrecta</span>
+                  <em>
+(HU10 - Éxito: Total acumulado suma correctamente todos los pedidos)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="obtenerTotalCanjeado_cuandoVariosCanjes_debeRetornarSumaCorrecta">
+                  </a> <!-- obtenerTotalCanjeado_cuandoVariosCanjes_debeRetornarSumaCorrecta -->
+                  <span class="method-name">obtenerTotalCanjeado_cuandoVariosCanjes_debeRetornarSumaCorrecta</span>
+                  <em>
+(HU10 - Éxito: Total canjeado suma correctamente todos los canjes)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite___QuickBite_Loyalty_Program-class-passed -->
+          <div class="suite-Suite___QuickBite_Loyalty_Program-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.quickbite.service.SuscripcionServiceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="activarSuscripcion_cuandoNoExiste_debeLanzarExcepcion">
+                  </a> <!-- activarSuscripcion_cuandoNoExiste_debeLanzarExcepcion -->
+                  <span class="method-name">activarSuscripcion_cuandoNoExiste_debeLanzarExcepcion</span>
+                  <em>
+(HU2 - Fallo: Activar suscripción inexistente debe lanzar excepción)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="activarSuscripcion_cuandoSuscripcionInactiva_debeQuedarActiva">
+                  </a> <!-- activarSuscripcion_cuandoSuscripcionInactiva_debeQuedarActiva -->
+                  <span class="method-name">activarSuscripcion_cuandoSuscripcionInactiva_debeQuedarActiva</span>
+                  <em>
+(HU2 - Éxito: Activar suscripción inactiva debe cambiar estado a ACTIVA)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="consultarEstado_cuandoSuscripcionActiva_debeRetornarActiva">
+                  </a> <!-- consultarEstado_cuandoSuscripcionActiva_debeRetornarActiva -->
+                  <span class="method-name">consultarEstado_cuandoSuscripcionActiva_debeRetornarActiva</span>
+                  <em>
+(HU3 - Éxito: Consultar estado de suscripción activa debe retornar ACTIVA)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="consultarEstado_cuandoSuscripcionNoExiste_debeLanzarExcepcion">
+                  </a> <!-- consultarEstado_cuandoSuscripcionNoExiste_debeLanzarExcepcion -->
+                  <span class="method-name">consultarEstado_cuandoSuscripcionNoExiste_debeLanzarExcepcion</span>
+                  <em>
+(HU3 - Fallo: Consultar estado de suscripción inexistente debe lanzar excepción)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="desactivarSuscripcion_cuandoNoExiste_debeLanzarExcepcion">
+                  </a> <!-- desactivarSuscripcion_cuandoNoExiste_debeLanzarExcepcion -->
+                  <span class="method-name">desactivarSuscripcion_cuandoNoExiste_debeLanzarExcepcion</span>
+                  <em>
+(HU2 - Fallo: Desactivar suscripción inexistente debe lanzar excepción)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="desactivarSuscripcion_cuandoSuscripcionActiva_debeQuedarInactiva">
+                  </a> <!-- desactivarSuscripcion_cuandoSuscripcionActiva_debeQuedarInactiva -->
+                  <span class="method-name">desactivarSuscripcion_cuandoSuscripcionActiva_debeQuedarInactiva</span>
+                  <em>
+(HU2 - Éxito: Desactivar suscripción activa debe cambiar estado a INACTIVA)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="obtenerSuscripcionesActivas_cuandoExistenVarias_debeRetornarSoloActivas">
+                  </a> <!-- obtenerSuscripcionesActivas_cuandoExistenVarias_debeRetornarSoloActivas -->
+                  <span class="method-name">obtenerSuscripcionesActivas_cuandoExistenVarias_debeRetornarSoloActivas</span>
+                  <em>
+(HU9 - Éxito: Reporte de activas filtra correctamente)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="obtenerSuscripcionesActivas_cuandoRepositorioVacio_debeRetornarListaVacia">
+                  </a> <!-- obtenerSuscripcionesActivas_cuandoRepositorioVacio_debeRetornarListaVacia -->
+                  <span class="method-name">obtenerSuscripcionesActivas_cuandoRepositorioVacio_debeRetornarListaVacia</span>
+                  <em>
+(HU9 - Fallo: Reporte de activas con repositorio vacío debe retornar lista vacía)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="obtenerSuscripcionesInactivas_cuandoExistenVarias_debeRetornarSoloInactivas">
+                  </a> <!-- obtenerSuscripcionesInactivas_cuandoExistenVarias_debeRetornarSoloInactivas -->
+                  <span class="method-name">obtenerSuscripcionesInactivas_cuandoExistenVarias_debeRetornarSoloInactivas</span>
+                  <em>
+(HU9 - Éxito: Reporte de inactivas filtra correctamente)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registrarSuscripcion_cuandoClienteIdVacio_debeLanzarExcepcion">
+                  </a> <!-- registrarSuscripcion_cuandoClienteIdVacio_debeLanzarExcepcion -->
+                  <span class="method-name">registrarSuscripcion_cuandoClienteIdVacio_debeLanzarExcepcion</span>
+                  <em>
+(HU1 - Fallo: Registrar suscripción con clienteId vacío debe lanzar excepción)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registrarSuscripcion_cuandoDatosValidos_debeRetornarSuscripcionActiva">
+                  </a> <!-- registrarSuscripcion_cuandoDatosValidos_debeRetornarSuscripcionActiva -->
+                  <span class="method-name">registrarSuscripcion_cuandoDatosValidos_debeRetornarSuscripcionActiva</span>
+                  <em>
+(HU1 - Éxito: Registrar suscripción con datos válidos debe retornar suscripción ACTIVA)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registrarSuscripcion_cuandoIdDuplicado_debeLanzarExcepcion">
+                  </a> <!-- registrarSuscripcion_cuandoIdDuplicado_debeLanzarExcepcion -->
+                  <span class="method-name">registrarSuscripcion_cuandoIdDuplicado_debeLanzarExcepcion</span>
+                  <em>
+(HU1 - Fallo: Registrar suscripción con ID duplicado debe lanzar excepción)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registrarSuscripcion_cuandoIdNulo_debeLanzarExcepcion">
+                  </a> <!-- registrarSuscripcion_cuandoIdNulo_debeLanzarExcepcion -->
+                  <span class="method-name">registrarSuscripcion_cuandoIdNulo_debeLanzarExcepcion</span>
+                  <em>
+(HU1 - Fallo: Registrar suscripción con ID nulo debe lanzar excepción)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite___QuickBite_Loyalty_Program-class-passed -->
+        </div> <!-- panel Suite___QuickBite_Loyalty_Program -->
+        <div panel-name="test-xml-Suite___QuickBite_Loyalty_Program" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/danielrojas/utn/calidad/proyecto1/com.quickbite/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite - QuickBite Loyalty Program&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Pruebas de SuscripcionService (HU-1, HU-2, HU-3, HU-9)&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.quickbite.service.SuscripcionServiceTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Pruebas de SuscripcionService (HU-1, HU-2, HU-3, HU-9) --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Pruebas de PuntosService (HU-4, HU-5, HU-8, HU-10)&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.quickbite.service.PuntosServiceTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Pruebas de PuntosService (HU-4, HU-5, HU-8, HU-10) --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Pruebas de ReglasService (HU-6, HU-7)&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.quickbite.service.ReglasServiceTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Pruebas de ReglasService (HU-6, HU-7) --&gt;
+&lt;/suite&gt; &lt;!-- Suite - QuickBite Loyalty Program --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite___QuickBite_Loyalty_Program" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite - QuickBite Loyalty Program</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Pruebas de SuscripcionService (HU-1, HU-2, HU-3, HU-9) (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Pruebas de PuntosService (HU-4, HU-5, HU-8, HU-10) (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Pruebas de ReglasService (HU-6, HU-7) (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite___QuickBite_Loyalty_Program" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite - QuickBite Loyalty Program</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite___QuickBite_Loyalty_Program" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite - QuickBite Loyalty Program</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite___QuickBite_Loyalty_Program');
+function tableData_Suite___QuickBite_Loyalty_Program() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(38);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'activarSuscripcion_cuandoSuscripcionInactiva_debeQuedarActiva')
+data.setCell(0, 2, 'com.quickbite.service.SuscripcionServiceTest')
+data.setCell(0, 3, 20);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'activarSuscripcion_cuandoNoExiste_debeLanzarExcepcion')
+data.setCell(1, 2, 'com.quickbite.service.SuscripcionServiceTest')
+data.setCell(1, 3, 3);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'obtenerTotalAcumulado_cuandoSinMovimientos_debeRetornarCero')
+data.setCell(2, 2, 'com.quickbite.service.PuntosServiceTest')
+data.setCell(2, 3, 3);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'canjearRecompensa_cuandoPuntosInsuficientes_debeLanzarExcepcion')
+data.setCell(3, 2, 'com.quickbite.service.PuntosServiceTest')
+data.setCell(3, 3, 2);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'definirReglaAcumulacion_cuandoDatosValidos_debeCrearReglaActiva')
+data.setCell(4, 2, 'com.quickbite.service.ReglasServiceTest')
+data.setCell(4, 3, 2);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'definirReglaRedencion_cuandoDatosValidos_debeCrearReglaActiva')
+data.setCell(5, 2, 'com.quickbite.service.ReglasServiceTest')
+data.setCell(5, 3, 2);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'registrarSuscripcion_cuandoIdNulo_debeLanzarExcepcion')
+data.setCell(6, 2, 'com.quickbite.service.SuscripcionServiceTest')
+data.setCell(6, 3, 1);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'consultarEstado_cuandoSuscripcionNoExiste_debeLanzarExcepcion')
+data.setCell(7, 2, 'com.quickbite.service.SuscripcionServiceTest')
+data.setCell(7, 3, 1);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'obtenerSuscripcionesActivas_cuandoExistenVarias_debeRetornarSoloActivas')
+data.setCell(8, 2, 'com.quickbite.service.SuscripcionServiceTest')
+data.setCell(8, 3, 1);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'registrarSuscripcion_cuandoDatosValidos_debeRetornarSuscripcionActiva')
+data.setCell(9, 2, 'com.quickbite.service.SuscripcionServiceTest')
+data.setCell(9, 3, 1);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'desactivarSuscripcion_cuandoNoExiste_debeLanzarExcepcion')
+data.setCell(10, 2, 'com.quickbite.service.SuscripcionServiceTest')
+data.setCell(10, 3, 1);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'acumularPuntos_cuandoSuscripcionInactiva_debeLanzarExcepcion')
+data.setCell(11, 2, 'com.quickbite.service.PuntosServiceTest')
+data.setCell(11, 3, 1);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'consultarHistorial_cuandoExistenMovimientos_debeRetornarTodos')
+data.setCell(12, 2, 'com.quickbite.service.PuntosServiceTest')
+data.setCell(12, 3, 1);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'acumularPuntos_cuandoSuscripcionActiva_debeIncrementarPuntosDeLealtad')
+data.setCell(13, 2, 'com.quickbite.service.PuntosServiceTest')
+data.setCell(13, 3, 1);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'obtenerTotalAcumulado_cuandoVariosPedidos_debeRetornarSumaCorrecta')
+data.setCell(14, 2, 'com.quickbite.service.PuntosServiceTest')
+data.setCell(14, 3, 1);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'canjearRecompensa_cuandoPuntosSuficientes_debeDescontarPuntosDeLealtad')
+data.setCell(15, 2, 'com.quickbite.service.PuntosServiceTest')
+data.setCell(15, 3, 1);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'obtenerTotalCanjeado_cuandoVariosCanjes_debeRetornarSumaCorrecta')
+data.setCell(16, 2, 'com.quickbite.service.PuntosServiceTest')
+data.setCell(16, 3, 1);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'canjearRecompensa_cuandoSuscripcionInactiva_debeLanzarExcepcion')
+data.setCell(17, 2, 'com.quickbite.service.PuntosServiceTest')
+data.setCell(17, 3, 1);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'definirReglaRedencion_cuandoIdDuplicado_debeLanzarExcepcion')
+data.setCell(18, 2, 'com.quickbite.service.ReglasServiceTest')
+data.setCell(18, 3, 1);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'obtenerReglaAcumulacionActiva_cuandoExisteReglaActiva_debeRetornarla')
+data.setCell(19, 2, 'com.quickbite.service.ReglasServiceTest')
+data.setCell(19, 3, 1);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'obtenerReglaRedencionActiva_cuandoExisteReglaActiva_debeRetornarla')
+data.setCell(20, 2, 'com.quickbite.service.ReglasServiceTest')
+data.setCell(20, 3, 1);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'obtenerSuscripcionesActivas_cuandoRepositorioVacio_debeRetornarListaVacia')
+data.setCell(21, 2, 'com.quickbite.service.SuscripcionServiceTest')
+data.setCell(21, 3, 0);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'consultarEstado_cuandoSuscripcionActiva_debeRetornarActiva')
+data.setCell(22, 2, 'com.quickbite.service.SuscripcionServiceTest')
+data.setCell(22, 3, 0);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'obtenerSuscripcionesInactivas_cuandoExistenVarias_debeRetornarSoloInactivas')
+data.setCell(23, 2, 'com.quickbite.service.SuscripcionServiceTest')
+data.setCell(23, 3, 0);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'desactivarSuscripcion_cuandoSuscripcionActiva_debeQuedarInactiva')
+data.setCell(24, 2, 'com.quickbite.service.SuscripcionServiceTest')
+data.setCell(24, 3, 0);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'registrarSuscripcion_cuandoClienteIdVacio_debeLanzarExcepcion')
+data.setCell(25, 2, 'com.quickbite.service.SuscripcionServiceTest')
+data.setCell(25, 3, 0);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'registrarSuscripcion_cuandoIdDuplicado_debeLanzarExcepcion')
+data.setCell(26, 2, 'com.quickbite.service.SuscripcionServiceTest')
+data.setCell(26, 3, 0);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'consultarHistorial_cuandoSinMovimientos_debeRetornarListaVacia')
+data.setCell(27, 2, 'com.quickbite.service.PuntosServiceTest')
+data.setCell(27, 3, 0);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'canjearRecompensa_cuandoRecompensaNoDisponible_debeLanzarExcepcion')
+data.setCell(28, 2, 'com.quickbite.service.PuntosServiceTest')
+data.setCell(28, 3, 0);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'acumularPuntos_cuandoCantidadNegativa_debeLanzarExcepcion')
+data.setCell(29, 2, 'com.quickbite.service.PuntosServiceTest')
+data.setCell(29, 3, 0);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'consultarHistorial_cuandoSuscripcionNoExiste_debeLanzarExcepcion')
+data.setCell(30, 2, 'com.quickbite.service.PuntosServiceTest')
+data.setCell(30, 3, 0);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'acumularPuntos_cuandoSuscripcionNoExiste_debeLanzarExcepcion')
+data.setCell(31, 2, 'com.quickbite.service.PuntosServiceTest')
+data.setCell(31, 3, 0);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'definirReglaRedencion_cuandoPuntosNegativos_debeLanzarExcepcion')
+data.setCell(32, 2, 'com.quickbite.service.ReglasServiceTest')
+data.setCell(32, 3, 0);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'obtenerReglasAcumulacion_cuandoExisteUnaRegla_debeRetornarListaConUnElemento')
+data.setCell(33, 2, 'com.quickbite.service.ReglasServiceTest')
+data.setCell(33, 3, 0);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'obtenerReglaAcumulacionActiva_cuandoNoHayReglas_debeRetornarOptionalVacio')
+data.setCell(34, 2, 'com.quickbite.service.ReglasServiceTest')
+data.setCell(34, 3, 0);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'definirReglaAcumulacion_cuandoPuntosCero_debeLanzarExcepcion')
+data.setCell(35, 2, 'com.quickbite.service.ReglasServiceTest')
+data.setCell(35, 3, 0);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'obtenerReglaRedencionActiva_cuandoNoHayReglas_debeRetornarOptionalVacio')
+data.setCell(36, 2, 'com.quickbite.service.ReglasServiceTest')
+data.setCell(36, 3, 0);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'definirReglaAcumulacion_cuandoIdDuplicado_debeLanzarExcepcion')
+data.setCell(37, 2, 'com.quickbite.service.ReglasServiceTest')
+data.setCell(37, 3, 0);
+window.suiteTableData['Suite___QuickBite_Loyalty_Program']= { tableData: data, tableDiv: 'times-div-Suite___QuickBite_Loyalty_Program'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 47 ms</span>
+              <div id="times-div-Suite___QuickBite_Loyalty_Program">
+              </div> <!-- times-div-Suite___QuickBite_Loyalty_Program -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite___QuickBite_Loyalty_Program" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite - QuickBite Loyalty Program</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite___QuickBite_Loyalty_Program" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite___QuickBite_Loyalty_Program" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.quickbite.service.SuscripcionServiceTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">activarSuscripcion_cuandoNoExiste_debeLanzarExcepcion</span>
+                <span class="method-start">10 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">15 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">activarSuscripcion_cuandoSuscripcionInactiva_debeQuedarActiva</span>
+                <span class="method-start">16 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">37 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">consultarEstado_cuandoSuscripcionActiva_debeRetornarActiva</span>
+                <span class="method-start">38 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">consultarEstado_cuandoSuscripcionNoExiste_debeLanzarExcepcion</span>
+                <span class="method-start">39 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">39 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">41 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">desactivarSuscripcion_cuandoNoExiste_debeLanzarExcepcion</span>
+                <span class="method-start">41 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">43 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">desactivarSuscripcion_cuandoSuscripcionActiva_debeQuedarInactiva</span>
+                <span class="method-start">44 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">45 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">obtenerSuscripcionesActivas_cuandoExistenVarias_debeRetornarSoloActivas</span>
+                <span class="method-start">46 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">48 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">obtenerSuscripcionesActivas_cuandoRepositorioVacio_debeRetornarListaVacia</span>
+                <span class="method-start">48 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">49 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">obtenerSuscripcionesInactivas_cuandoExistenVarias_debeRetornarSoloInactivas</span>
+                <span class="method-start">50 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">51 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">registrarSuscripcion_cuandoClienteIdVacio_debeLanzarExcepcion</span>
+                <span class="method-start">52 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">53 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">registrarSuscripcion_cuandoDatosValidos_debeRetornarSuscripcionActiva</span>
+                <span class="method-start">53 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">54 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">registrarSuscripcion_cuandoIdDuplicado_debeLanzarExcepcion</span>
+                <span class="method-start">55 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">56 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">registrarSuscripcion_cuandoIdNulo_debeLanzarExcepcion</span>
+                <span class="method-start">56 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.quickbite.service.PuntosServiceTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">134 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">acumularPuntos_cuandoCantidadNegativa_debeLanzarExcepcion</span>
+                <span class="method-start">136 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">137 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">acumularPuntos_cuandoSuscripcionActiva_debeIncrementarPuntosDeLealtad</span>
+                <span class="method-start">138 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">140 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">acumularPuntos_cuandoSuscripcionInactiva_debeLanzarExcepcion</span>
+                <span class="method-start">141 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">143 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">acumularPuntos_cuandoSuscripcionNoExiste_debeLanzarExcepcion</span>
+                <span class="method-start">144 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">145 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">canjearRecompensa_cuandoPuntosInsuficientes_debeLanzarExcepcion</span>
+                <span class="method-start">146 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">150 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">canjearRecompensa_cuandoPuntosSuficientes_debeDescontarPuntosDeLealtad</span>
+                <span class="method-start">150 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">152 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">canjearRecompensa_cuandoRecompensaNoDisponible_debeLanzarExcepcion</span>
+                <span class="method-start">153 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">154 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">canjearRecompensa_cuandoSuscripcionInactiva_debeLanzarExcepcion</span>
+                <span class="method-start">154 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">consultarHistorial_cuandoExistenMovimientos_debeRetornarTodos</span>
+                <span class="method-start">157 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">157 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">160 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">consultarHistorial_cuandoSinMovimientos_debeRetornarListaVacia</span>
+                <span class="method-start">161 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">162 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">consultarHistorial_cuandoSuscripcionNoExiste_debeLanzarExcepcion</span>
+                <span class="method-start">163 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">obtenerTotalAcumulado_cuandoSinMovimientos_debeRetornarCero</span>
+                <span class="method-start">165 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">165 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">170 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">obtenerTotalAcumulado_cuandoVariosPedidos_debeRetornarSumaCorrecta</span>
+                <span class="method-start">170 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">172 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">obtenerTotalCanjeado_cuandoVariosCanjes_debeRetornarSumaCorrecta</span>
+                <span class="method-start">173 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.quickbite.service.ReglasServiceTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">185 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">definirReglaAcumulacion_cuandoDatosValidos_debeCrearReglaActiva</span>
+                <span class="method-start">186 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">188 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">definirReglaAcumulacion_cuandoIdDuplicado_debeLanzarExcepcion</span>
+                <span class="method-start">189 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">definirReglaAcumulacion_cuandoPuntosCero_debeLanzarExcepcion</span>
+                <span class="method-start">190 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">190 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">191 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">definirReglaRedencion_cuandoDatosValidos_debeCrearReglaActiva</span>
+                <span class="method-start">191 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">definirReglaRedencion_cuandoIdDuplicado_debeLanzarExcepcion</span>
+                <span class="method-start">194 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">194 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">195 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">definirReglaRedencion_cuandoPuntosNegativos_debeLanzarExcepcion</span>
+                <span class="method-start">196 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">obtenerReglaAcumulacionActiva_cuandoExisteReglaActiva_debeRetornarla</span>
+                <span class="method-start">197 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">197 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">198 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">obtenerReglaAcumulacionActiva_cuandoNoHayReglas_debeRetornarOptionalVacio</span>
+                <span class="method-start">199 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">200 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">obtenerReglaRedencionActiva_cuandoExisteReglaActiva_debeRetornarla</span>
+                <span class="method-start">200 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">201 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">obtenerReglaRedencionActiva_cuandoNoHayReglas_debeRetornarOptionalVacio</span>
+                <span class="method-start">202 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">202 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">obtenerReglasAcumulacion_cuandoExisteUnaRegla_debeRetornarListaConUnElemento</span>
+                <span class="method-start">203 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

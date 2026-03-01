@@ -1,0 +1,5 @@
+com/quickbite/mock/PuntosRepositoryMock.class
+com/quickbite/service/ReglasServiceTest.class
+com/quickbite/mock/SuscripcionRepositoryMock.class
+com/quickbite/service/PuntosServiceTest.class
+com/quickbite/service/SuscripcionServiceTest.class

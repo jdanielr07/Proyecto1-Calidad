@@ -1,0 +1,16 @@
+com/quickbite/model/ReglaAcumulacion.class
+com/quickbite/service/SuscripcionService.class
+com/quickbite/exception/PuntosInsuficientesException.class
+com/quickbite/model/Recompensa.class
+com/quickbite/model/EstadoSuscripcion.class
+com/quickbite/model/TipoMovimiento.class
+com/quickbite/model/Suscripcion.class
+com/quickbite/service/PuntosService.class
+com/quickbite/repository/SuscripcionRepository.class
+com/quickbite/repository/PuntosRepository.class
+com/quickbite/model/Cliente.class
+com/quickbite/model/MovimientoPuntos.class
+com/quickbite/service/ReglasService.class
+com/quickbite/exception/SuscripcionNoEncontradaException.class
+com/quickbite/model/ReglaRedencion.class
+com/quickbite/exception/SuscripcionInactivaException.class
