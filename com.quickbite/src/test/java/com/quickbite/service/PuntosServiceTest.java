@@ -11,14 +11,8 @@ import com.quickbite.model.TipoMovimiento;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import java.util.List;
 
-/**
- * Pruebas unitarias para PuntosService — QuickBite.
- * Cubre: HU-4, HU-5, HU-8, HU-10
- * Patrón: AAA (Arrange - Act - Assert)
- */
 public class PuntosServiceTest {
 
     private PuntosService puntosService;
@@ -32,215 +26,144 @@ public class PuntosServiceTest {
         puntosRepositoryMock = new PuntosRepositoryMock();
         suscripcionService = new SuscripcionService(suscripcionRepositoryMock);
         puntosService = new PuntosService(suscripcionRepositoryMock, puntosRepositoryMock);
-
-        // Suscripción base disponible para la mayoría de tests
         suscripcionService.registrarSuscripcion("SUB-001", "CLI-001");
     }
 
-    // =========================================================
-    // HU-4: Acumular puntos por pedido
-    // =========================================================
-
-    @Test(description = "HU4 - Éxito: Acumular puntos por pedido en suscripción activa")
+    // HU-4
+    @Test(description = "QB-11 | HU-4 - Exito: Acumular puntos por pedido en suscripcion activa")
     public void acumularPuntos_cuandoSuscripcionActiva_debeIncrementarPuntosDeLealtad() {
         // Arrange
         int puntosIniciales = suscripcionRepositoryMock.buscarPorId("SUB-001").get().getPuntosDeLealtad();
-
         // Act
-        MovimientoPuntos resultado = puntosService.acumularPuntos("SUB-001", 50, "Pedido #1 - Pizza Margherita");
-
+        MovimientoPuntos resultado = puntosService.acumularPuntos("SUB-001", 50, "Pedido #1 - Pizza");
         // Assert
-        Assert.assertNotNull(resultado, "El movimiento no debe ser nulo");
-        Assert.assertEquals(resultado.getTipo(), TipoMovimiento.ACUMULACION, "Debe ser tipo ACUMULACION");
-        Assert.assertEquals(resultado.getCantidad(), 50, "La cantidad debe ser 50 puntos");
-
-        int puntosFinales = suscripcionRepositoryMock.buscarPorId("SUB-001").get().getPuntosDeLealtad();
-        Assert.assertEquals(puntosFinales, puntosIniciales + 50, "Los puntos de lealtad deben incrementarse");
+        Assert.assertNotNull(resultado);
+        Assert.assertEquals(resultado.getTipo(), TipoMovimiento.ACUMULACION);
+        Assert.assertEquals(resultado.getCantidad(), 50);
+        Assert.assertEquals(suscripcionRepositoryMock.buscarPorId("SUB-001").get().getPuntosDeLealtad(), puntosIniciales + 50);
     }
 
-    @Test(description = "HU4 - Fallo: Acumular puntos en suscripción inactiva debe lanzar excepción",
+    @Test(description = "QB-12 | HU-4 - Fallo: Acumular puntos en suscripcion inactiva debe lanzar excepcion",
           expectedExceptions = SuscripcionInactivaException.class)
     public void acumularPuntos_cuandoSuscripcionInactiva_debeLanzarExcepcion() {
         // Arrange
         suscripcionService.desactivarSuscripcion("SUB-001");
-
-        // Act (debe lanzar excepción)
-        puntosService.acumularPuntos("SUB-001", 50, "Pedido #2");
-
-        // Assert - manejado por expectedExceptions
+        // Act
+        puntosService.acumularPuntos("SUB-001", 50, "Pedido");
     }
 
-    @Test(description = "HU4 - Fallo: Acumular cantidad negativa debe lanzar excepción",
+    @Test(description = "QB-13 | HU-4 - Fallo: Acumular cantidad negativa debe lanzar excepcion",
           expectedExceptions = IllegalArgumentException.class)
     public void acumularPuntos_cuandoCantidadNegativa_debeLanzarExcepcion() {
-        // Arrange
-        int cantidadInvalida = -10;
-
-        // Act (debe lanzar excepción)
-        puntosService.acumularPuntos("SUB-001", cantidadInvalida, "Intento inválido");
-
-        // Assert - manejado por expectedExceptions
+        puntosService.acumularPuntos("SUB-001", -10, "Invalido");
     }
 
-    @Test(description = "HU4 - Fallo: Acumular puntos en suscripción inexistente debe lanzar excepción",
+    @Test(description = "QB-14 | HU-4 - Fallo: Acumular puntos en suscripcion inexistente debe lanzar excepcion",
           expectedExceptions = SuscripcionNoEncontradaException.class)
     public void acumularPuntos_cuandoSuscripcionNoExiste_debeLanzarExcepcion() {
-        // Arrange - ID inexistente
-
-        // Act (debe lanzar excepción)
         puntosService.acumularPuntos("SUB-INEXISTENTE", 50, "Pedido");
-
-        // Assert - manejado por expectedExceptions
     }
 
-    // =========================================================
-    // HU-5: Canjear puntos por recompensas
-    // =========================================================
-
-    @Test(description = "HU5 - Éxito: Canjear recompensa con puntos suficientes debe descontar puntos")
+    // HU-5
+    @Test(description = "QB-15 | HU-5 - Exito: Canjear recompensa con puntos suficientes debe descontar puntos")
     public void canjearRecompensa_cuandoPuntosSuficientes_debeDescontarPuntosDeLealtad() {
         // Arrange
         puntosService.acumularPuntos("SUB-001", 300, "Pedidos de la semana");
-        Recompensa recompensa = new Recompensa("R-001", "Delivery gratis", "Envío sin costo en tu próximo pedido", 200);
-
+        Recompensa recompensa = new Recompensa("R-001", "Delivery gratis", "Envio sin costo", 200);
         // Act
         MovimientoPuntos resultado = puntosService.canjearRecompensa("SUB-001", recompensa);
-
         // Assert
-        Assert.assertNotNull(resultado, "El movimiento no debe ser nulo");
-        Assert.assertEquals(resultado.getTipo(), TipoMovimiento.REDENCION, "Debe ser tipo REDENCION");
-        Assert.assertEquals(resultado.getCantidad(), 200, "Deben descontarse 200 puntos");
-
-        int puntosRestantes = suscripcionRepositoryMock.buscarPorId("SUB-001").get().getPuntosDeLealtad();
-        Assert.assertEquals(puntosRestantes, 100, "Deben quedar 100 puntos de lealtad");
+        Assert.assertNotNull(resultado);
+        Assert.assertEquals(resultado.getTipo(), TipoMovimiento.REDENCION);
+        Assert.assertEquals(resultado.getCantidad(), 200);
+        Assert.assertEquals(suscripcionRepositoryMock.buscarPorId("SUB-001").get().getPuntosDeLealtad(), 100);
     }
 
-    @Test(description = "HU5 - Fallo: Canjear recompensa con puntos insuficientes debe lanzar excepción",
+    @Test(description = "QB-16 | HU-5 - Fallo: Canjear recompensa con puntos insuficientes debe lanzar excepcion",
           expectedExceptions = PuntosInsuficientesException.class)
     public void canjearRecompensa_cuandoPuntosInsuficientes_debeLanzarExcepcion() {
         // Arrange
         puntosService.acumularPuntos("SUB-001", 50, "Un solo pedido");
-        Recompensa recompensa = new Recompensa("R-001", "Delivery gratis", "Envío gratis", 200);
-
-        // Act (debe lanzar excepción)
+        Recompensa recompensa = new Recompensa("R-001", "Delivery gratis", "Envio gratis", 200);
+        // Act
         puntosService.canjearRecompensa("SUB-001", recompensa);
-
-        // Assert - manejado por expectedExceptions
     }
 
-    @Test(description = "HU5 - Fallo: Canjear recompensa no disponible debe lanzar excepción",
+    @Test(description = "QB-17 | HU-5 - Fallo: Canjear recompensa no disponible debe lanzar excepcion",
           expectedExceptions = IllegalArgumentException.class)
     public void canjearRecompensa_cuandoRecompensaNoDisponible_debeLanzarExcepcion() {
         // Arrange
         puntosService.acumularPuntos("SUB-001", 500, "Pedidos");
-        Recompensa recompensaAgotada = new Recompensa("R-002", "Postre gratis", "Un postre a tu elección", 100);
+        Recompensa recompensaAgotada = new Recompensa("R-002", "Postre gratis", "Un postre", 100);
         recompensaAgotada.setDisponible(false);
-
-        // Act (debe lanzar excepción)
+        // Act
         puntosService.canjearRecompensa("SUB-001", recompensaAgotada);
-
-        // Assert - manejado por expectedExceptions
     }
 
-    @Test(description = "HU5 - Fallo: Canjear recompensa en suscripción inactiva debe lanzar excepción",
+    @Test(description = "QB-18 | HU-5 - Fallo: Canjear recompensa en suscripcion inactiva debe lanzar excepcion",
           expectedExceptions = SuscripcionInactivaException.class)
     public void canjearRecompensa_cuandoSuscripcionInactiva_debeLanzarExcepcion() {
         // Arrange
         puntosService.acumularPuntos("SUB-001", 500, "Pedidos previos");
         suscripcionService.desactivarSuscripcion("SUB-001");
-        Recompensa recompensa = new Recompensa("R-001", "Delivery gratis", "Envío gratis", 200);
-
-        // Act (debe lanzar excepción)
+        Recompensa recompensa = new Recompensa("R-001", "Delivery gratis", "Envio gratis", 200);
+        // Act
         puntosService.canjearRecompensa("SUB-001", recompensa);
-
-        // Assert - manejado por expectedExceptions
     }
 
-    // =========================================================
-    // HU-8: Consultar historial de movimientos
-    // =========================================================
-
-    @Test(description = "HU8 - Éxito: Historial refleja todos los movimientos realizados")
+    // HU-8
+    @Test(description = "QB-28 | HU-8 - Exito: Historial refleja todos los movimientos realizados")
     public void consultarHistorial_cuandoExistenMovimientos_debeRetornarTodos() {
         // Arrange
         puntosService.acumularPuntos("SUB-001", 50, "Pedido #1 - Sushi");
         puntosService.acumularPuntos("SUB-001", 80, "Pedido #2 - Hamburguesa");
-        Recompensa r = new Recompensa("R-001", "Bebida gratis", "Bebida a tu elección", 30);
+        Recompensa r = new Recompensa("R-001", "Bebida gratis", "Bebida a tu eleccion", 30);
         puntosService.canjearRecompensa("SUB-001", r);
-
         // Act
         List<MovimientoPuntos> historial = puntosService.consultarHistorial("SUB-001");
-
         // Assert
-        Assert.assertNotNull(historial, "El historial no debe ser nulo");
-        Assert.assertEquals(historial.size(), 3, "Deben existir 3 movimientos en el historial");
+        Assert.assertNotNull(historial);
+        Assert.assertEquals(historial.size(), 3);
     }
 
-    @Test(description = "HU8 - Éxito: Historial vacío cuando no hay movimientos")
+    @Test(description = "QB-29 | HU-8 - Exito: Historial vacio cuando no hay movimientos")
     public void consultarHistorial_cuandoSinMovimientos_debeRetornarListaVacia() {
-        // Arrange - suscripción sin movimientos
-
         // Act
         List<MovimientoPuntos> historial = puntosService.consultarHistorial("SUB-001");
-
         // Assert
-        Assert.assertNotNull(historial, "El historial no debe ser nulo");
-        Assert.assertTrue(historial.isEmpty(), "El historial debe estar vacío");
+        Assert.assertNotNull(historial);
+        Assert.assertTrue(historial.isEmpty());
     }
 
-    @Test(description = "HU8 - Fallo: Historial de suscripción inexistente debe lanzar excepción",
+    @Test(description = "QB-30 | HU-8 - Fallo: Historial de suscripcion inexistente debe lanzar excepcion",
           expectedExceptions = SuscripcionNoEncontradaException.class)
     public void consultarHistorial_cuandoSuscripcionNoExiste_debeLanzarExcepcion() {
-        // Arrange - ID inexistente
-
-        // Act (debe lanzar excepción)
         puntosService.consultarHistorial("SUB-INEXISTENTE");
-
-        // Assert - manejado por expectedExceptions
     }
 
-    // =========================================================
-    // HU-10: Reporte de puntos acumulados y canjeados
-    // =========================================================
-
-    @Test(description = "HU10 - Éxito: Total acumulado suma correctamente todos los pedidos")
+    // HU-10
+    @Test(description = "QB-36 | HU-10 - Exito: Total acumulado suma correctamente todos los pedidos")
     public void obtenerTotalAcumulado_cuandoVariosPedidos_debeRetornarSumaCorrecta() {
         // Arrange
         puntosService.acumularPuntos("SUB-001", 50,  "Pedido #1 - Tacos");
         puntosService.acumularPuntos("SUB-001", 80,  "Pedido #2 - Ramen");
         puntosService.acumularPuntos("SUB-001", 120, "Pedido #3 - Parrilla");
-
-        // Act
-        int totalAcumulado = puntosService.obtenerTotalAcumulado("SUB-001");
-
-        // Assert
-        Assert.assertEquals(totalAcumulado, 250, "El total acumulado debe ser 250 puntos");
+        // Act & Assert
+        Assert.assertEquals(puntosService.obtenerTotalAcumulado("SUB-001"), 250);
     }
 
-    @Test(description = "HU10 - Éxito: Total canjeado suma correctamente todos los canjes")
+    @Test(description = "QB-37 | HU-10 - Exito: Total canjeado suma correctamente todos los canjes")
     public void obtenerTotalCanjeado_cuandoVariosCanjes_debeRetornarSumaCorrecta() {
         // Arrange
         puntosService.acumularPuntos("SUB-001", 500, "Pedidos del mes");
-        Recompensa r1 = new Recompensa("R-001", "Delivery gratis",  "Envío gratis",         100);
-        Recompensa r2 = new Recompensa("R-002", "Descuento 20%",    "20% en próximo pedido", 150);
-        puntosService.canjearRecompensa("SUB-001", r1);
-        puntosService.canjearRecompensa("SUB-001", r2);
-
-        // Act
-        int totalCanjeado = puntosService.obtenerTotalCanjeado("SUB-001");
-
-        // Assert
-        Assert.assertEquals(totalCanjeado, 250, "El total canjeado debe ser 250 puntos");
+        puntosService.canjearRecompensa("SUB-001", new Recompensa("R-001", "Delivery gratis", "Envio gratis", 100));
+        puntosService.canjearRecompensa("SUB-001", new Recompensa("R-002", "Descuento 20%", "20% en proximo pedido", 150));
+        // Act & Assert
+        Assert.assertEquals(puntosService.obtenerTotalCanjeado("SUB-001"), 250);
     }
 
-    @Test(description = "HU10 - Fallo: Total acumulado sin movimientos debe retornar cero")
+    @Test(description = "QB-38 | HU-10 - Fallo: Total acumulado sin movimientos debe retornar cero")
     public void obtenerTotalAcumulado_cuandoSinMovimientos_debeRetornarCero() {
-        // Arrange - sin pedidos
-
-        // Act
-        int totalAcumulado = puntosService.obtenerTotalAcumulado("SUB-001");
-
-        // Assert
-        Assert.assertEquals(totalAcumulado, 0, "El total acumulado debe ser 0 cuando no hay pedidos");
+        Assert.assertEquals(puntosService.obtenerTotalAcumulado("SUB-001"), 0);
     }
 }

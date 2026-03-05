@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="38" passed="38" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-01T17:44:21 CST" name="Suite - QuickBite Loyalty Program" finished-at="2026-03-01T17:44:21 CST" duration-ms="230">
+  <suite started-at="2026-03-05T13:53:35 CST" name="Suite - QuickBite Loyalty Program" finished-at="2026-03-05T13:53:35 CST" duration-ms="306">
     <groups>
     </groups>
-    <test started-at="2026-03-01T17:44:21 CST" name="Pruebas de SuscripcionService (HU-1, HU-2, HU-3, HU-9)" finished-at="2026-03-01T17:44:21 CST" duration-ms="86">
+    <test started-at="2026-03-05T13:53:35 CST" name="Pruebas de SuscripcionService (HU-1, HU-2, HU-3, HU-9)" finished-at="2026-03-05T13:53:35 CST" duration-ms="100">
       <class name="com.quickbite.service.SuscripcionServiceTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="activarSuscripcion_cuandoNoExiste_debeLanzarExcepcion()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-01T17:44:21 CST" name="activarSuscripcion_cuandoNoExiste_debeLanzarExcepcion" description="HU2 - Fallo: Activar suscripción inexistente debe lanzar excepción" finished-at="2026-03-01T17:44:21 CST" duration-ms="3" status="PASS">
+        <test-method signature="activarSuscripcion_cuandoNoExiste_debeLanzarExcepcion()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-05T13:53:35 CST" name="activarSuscripcion_cuandoNoExiste_debeLanzarExcepcion" description="HU2 - Fallo: Activar suscripción inexistente debe lanzar excepción" finished-at="2026-03-05T13:53:35 CST" duration-ms="3" status="PASS">
           <exception class="com.quickbite.exception.SuscripcionNoEncontradaException">
             <message>
               <![CDATA[No se encontro una suscripcion con el ID: SUB-INEXISTENTE]]>
@@ -59,23 +59,23 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- activarSuscripcion_cuandoNoExiste_debeLanzarExcepcion -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="activarSuscripcion_cuandoSuscripcionInactiva_debeQuedarActiva()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-01T17:44:21 CST" name="activarSuscripcion_cuandoSuscripcionInactiva_debeQuedarActiva" description="HU2 - Éxito: Activar suscripción inactiva debe cambiar estado a ACTIVA" finished-at="2026-03-01T17:44:21 CST" duration-ms="20" status="PASS">
+        <test-method signature="activarSuscripcion_cuandoSuscripcionInactiva_debeQuedarActiva()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-05T13:53:35 CST" name="activarSuscripcion_cuandoSuscripcionInactiva_debeQuedarActiva" description="HU2 - Éxito: Activar suscripción inactiva debe cambiar estado a ACTIVA" finished-at="2026-03-05T13:53:35 CST" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- activarSuscripcion_cuandoSuscripcionInactiva_debeQuedarActiva -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="consultarEstado_cuandoSuscripcionActiva_debeRetornarActiva()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-01T17:44:21 CST" name="consultarEstado_cuandoSuscripcionActiva_debeRetornarActiva" description="HU3 - Éxito: Consultar estado de suscripción activa debe retornar ACTIVA" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
+        <test-method signature="consultarEstado_cuandoSuscripcionActiva_debeRetornarActiva()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-05T13:53:35 CST" name="consultarEstado_cuandoSuscripcionActiva_debeRetornarActiva" description="HU3 - Éxito: Consultar estado de suscripción activa debe retornar ACTIVA" finished-at="2026-03-05T13:53:35 CST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- consultarEstado_cuandoSuscripcionActiva_debeRetornarActiva -->
-        <test-method signature="consultarEstado_cuandoSuscripcionNoExiste_debeLanzarExcepcion()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-01T17:44:21 CST" name="consultarEstado_cuandoSuscripcionNoExiste_debeLanzarExcepcion" description="HU3 - Fallo: Consultar estado de suscripción inexistente debe lanzar excepción" finished-at="2026-03-01T17:44:21 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="consultarEstado_cuandoSuscripcionNoExiste_debeLanzarExcepcion()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-05T13:53:35 CST" name="consultarEstado_cuandoSuscripcionNoExiste_debeLanzarExcepcion" description="HU3 - Fallo: Consultar estado de suscripción inexistente debe lanzar excepción" finished-at="2026-03-05T13:53:35 CST" duration-ms="1" status="PASS">
           <exception class="com.quickbite.exception.SuscripcionNoEncontradaException">
             <message>
               <![CDATA[No se encontro una suscripcion con el ID: SUB-INEXISTENTE]]>
@@ -123,11 +123,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- consultarEstado_cuandoSuscripcionNoExiste_debeLanzarExcepcion -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="desactivarSuscripcion_cuandoNoExiste_debeLanzarExcepcion()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-01T17:44:21 CST" name="desactivarSuscripcion_cuandoNoExiste_debeLanzarExcepcion" description="HU2 - Fallo: Desactivar suscripción inexistente debe lanzar excepción" finished-at="2026-03-01T17:44:21 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="desactivarSuscripcion_cuandoNoExiste_debeLanzarExcepcion()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-05T13:53:35 CST" name="desactivarSuscripcion_cuandoNoExiste_debeLanzarExcepcion" description="HU2 - Fallo: Desactivar suscripción inexistente debe lanzar excepción" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
           <exception class="com.quickbite.exception.SuscripcionNoEncontradaException">
             <message>
               <![CDATA[No se encontro una suscripcion con el ID: SUB-INEXISTENTE]]>
@@ -175,47 +179,39 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- desactivarSuscripcion_cuandoNoExiste_debeLanzarExcepcion -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="desactivarSuscripcion_cuandoSuscripcionActiva_debeQuedarInactiva()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-01T17:44:21 CST" name="desactivarSuscripcion_cuandoSuscripcionActiva_debeQuedarInactiva" description="HU2 - Éxito: Desactivar suscripción activa debe cambiar estado a INACTIVA" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
+        <test-method signature="desactivarSuscripcion_cuandoSuscripcionActiva_debeQuedarInactiva()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-05T13:53:35 CST" name="desactivarSuscripcion_cuandoSuscripcionActiva_debeQuedarInactiva" description="HU2 - Éxito: Desactivar suscripción activa debe cambiar estado a INACTIVA" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- desactivarSuscripcion_cuandoSuscripcionActiva_debeQuedarInactiva -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="obtenerSuscripcionesActivas_cuandoExistenVarias_debeRetornarSoloActivas()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-01T17:44:21 CST" name="obtenerSuscripcionesActivas_cuandoExistenVarias_debeRetornarSoloActivas" description="HU9 - Éxito: Reporte de activas filtra correctamente" finished-at="2026-03-01T17:44:21 CST" duration-ms="1" status="PASS">
+        <test-method signature="obtenerSuscripcionesActivas_cuandoExistenVarias_debeRetornarSoloActivas()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-05T13:53:35 CST" name="obtenerSuscripcionesActivas_cuandoExistenVarias_debeRetornarSoloActivas" description="HU9 - Éxito: Reporte de activas filtra correctamente" finished-at="2026-03-05T13:53:35 CST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- obtenerSuscripcionesActivas_cuandoExistenVarias_debeRetornarSoloActivas -->
-        <test-method signature="obtenerSuscripcionesActivas_cuandoRepositorioVacio_debeRetornarListaVacia()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-01T17:44:21 CST" name="obtenerSuscripcionesActivas_cuandoRepositorioVacio_debeRetornarListaVacia" description="HU9 - Fallo: Reporte de activas con repositorio vacío debe retornar lista vacía" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="obtenerSuscripcionesActivas_cuandoRepositorioVacio_debeRetornarListaVacia()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-05T13:53:35 CST" name="obtenerSuscripcionesActivas_cuandoRepositorioVacio_debeRetornarListaVacia" description="HU9 - Fallo: Reporte de activas con repositorio vacío debe retornar lista vacía" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- obtenerSuscripcionesActivas_cuandoRepositorioVacio_debeRetornarListaVacia -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="obtenerSuscripcionesInactivas_cuandoExistenVarias_debeRetornarSoloInactivas()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-01T17:44:21 CST" name="obtenerSuscripcionesInactivas_cuandoExistenVarias_debeRetornarSoloInactivas" description="HU9 - Éxito: Reporte de inactivas filtra correctamente" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
+        <test-method signature="obtenerSuscripcionesInactivas_cuandoExistenVarias_debeRetornarSoloInactivas()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-05T13:53:35 CST" name="obtenerSuscripcionesInactivas_cuandoExistenVarias_debeRetornarSoloInactivas" description="HU9 - Éxito: Reporte de inactivas filtra correctamente" finished-at="2026-03-05T13:53:35 CST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- obtenerSuscripcionesInactivas_cuandoExistenVarias_debeRetornarSoloInactivas -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="registrarSuscripcion_cuandoClienteIdVacio_debeLanzarExcepcion()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-01T17:44:21 CST" name="registrarSuscripcion_cuandoClienteIdVacio_debeLanzarExcepcion" description="HU1 - Fallo: Registrar suscripción con clienteId vacío debe lanzar excepción" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
+        <test-method signature="registrarSuscripcion_cuandoClienteIdVacio_debeLanzarExcepcion()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-05T13:53:35 CST" name="registrarSuscripcion_cuandoClienteIdVacio_debeLanzarExcepcion" description="HU1 - Fallo: Registrar suscripción con clienteId vacío debe lanzar excepción" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[El ID de cliente no puede ser nulo o vacío.]]>
@@ -260,19 +256,23 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrarSuscripcion_cuandoClienteIdVacio_debeLanzarExcepcion -->
-        <test-method signature="registrarSuscripcion_cuandoDatosValidos_debeRetornarSuscripcionActiva()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-01T17:44:21 CST" name="registrarSuscripcion_cuandoDatosValidos_debeRetornarSuscripcionActiva" description="HU1 - Éxito: Registrar suscripción con datos válidos debe retornar suscripción ACTIVA" finished-at="2026-03-01T17:44:21 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="registrarSuscripcion_cuandoDatosValidos_debeRetornarSuscripcionActiva()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-05T13:53:35 CST" name="registrarSuscripcion_cuandoDatosValidos_debeRetornarSuscripcionActiva" description="HU1 - Éxito: Registrar suscripción con datos válidos debe retornar suscripción ACTIVA" finished-at="2026-03-05T13:53:35 CST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrarSuscripcion_cuandoDatosValidos_debeRetornarSuscripcionActiva -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="registrarSuscripcion_cuandoIdDuplicado_debeLanzarExcepcion()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-01T17:44:21 CST" name="registrarSuscripcion_cuandoIdDuplicado_debeLanzarExcepcion" description="HU1 - Fallo: Registrar suscripción con ID duplicado debe lanzar excepción" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
+        <test-method signature="registrarSuscripcion_cuandoIdDuplicado_debeLanzarExcepcion()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-05T13:53:35 CST" name="registrarSuscripcion_cuandoIdDuplicado_debeLanzarExcepcion" description="HU1 - Fallo: Registrar suscripción con ID duplicado debe lanzar excepción" finished-at="2026-03-05T13:53:35 CST" duration-ms="1" status="PASS">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[Ya existe una suscripción con el ID: SUB-001]]>
@@ -317,7 +317,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrarSuscripcion_cuandoIdDuplicado_debeLanzarExcepcion -->
-        <test-method signature="registrarSuscripcion_cuandoIdNulo_debeLanzarExcepcion()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-01T17:44:21 CST" name="registrarSuscripcion_cuandoIdNulo_debeLanzarExcepcion" description="HU1 - Fallo: Registrar suscripción con ID nulo debe lanzar excepción" finished-at="2026-03-01T17:44:21 CST" duration-ms="1" status="PASS">
+        <test-method signature="registrarSuscripcion_cuandoIdNulo_debeLanzarExcepcion()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-05T13:53:35 CST" name="registrarSuscripcion_cuandoIdNulo_debeLanzarExcepcion" description="HU1 - Fallo: Registrar suscripción con ID nulo debe lanzar excepción" finished-at="2026-03-05T13:53:35 CST" duration-ms="1" status="PASS">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[El ID de suscripción no puede ser nulo o vacío.]]>
@@ -362,19 +362,19 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrarSuscripcion_cuandoIdNulo_debeLanzarExcepcion -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.SuscripcionServiceTest@693fe6c9]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
       </class> <!-- com.quickbite.service.SuscripcionServiceTest -->
     </test> <!-- Pruebas de SuscripcionService (HU-1, HU-2, HU-3, HU-9) -->
-    <test started-at="2026-03-01T17:44:21 CST" name="Pruebas de PuntosService (HU-4, HU-5, HU-8, HU-10)" finished-at="2026-03-01T17:44:21 CST" duration-ms="41">
+    <test started-at="2026-03-05T13:53:35 CST" name="Pruebas de PuntosService (HU-4, HU-5, HU-8, HU-10)" finished-at="2026-03-05T13:53:35 CST" duration-ms="36">
       <class name="com.quickbite.service.PuntosServiceTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="acumularPuntos_cuandoCantidadNegativa_debeLanzarExcepcion()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-01T17:44:21 CST" name="acumularPuntos_cuandoCantidadNegativa_debeLanzarExcepcion" description="HU4 - Fallo: Acumular cantidad negativa debe lanzar excepción" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
+        <test-method signature="acumularPuntos_cuandoCantidadNegativa_debeLanzarExcepcion()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-05T13:53:35 CST" name="acumularPuntos_cuandoCantidadNegativa_debeLanzarExcepcion" description="HU4 - Fallo: Acumular cantidad negativa debe lanzar excepción" finished-at="2026-03-05T13:53:35 CST" duration-ms="1" status="PASS">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[La cantidad de puntos a acumular debe ser mayor a 0.]]>
@@ -419,19 +419,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acumularPuntos_cuandoCantidadNegativa_debeLanzarExcepcion -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="acumularPuntos_cuandoSuscripcionActiva_debeIncrementarPuntosDeLealtad()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-01T17:44:21 CST" name="acumularPuntos_cuandoSuscripcionActiva_debeIncrementarPuntosDeLealtad" description="HU4 - Éxito: Acumular puntos por pedido en suscripción activa" finished-at="2026-03-01T17:44:21 CST" duration-ms="1" status="PASS">
+        <test-method signature="acumularPuntos_cuandoSuscripcionActiva_debeIncrementarPuntosDeLealtad()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-05T13:53:35 CST" name="acumularPuntos_cuandoSuscripcionActiva_debeIncrementarPuntosDeLealtad" description="HU4 - Éxito: Acumular puntos por pedido en suscripción activa" finished-at="2026-03-05T13:53:35 CST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acumularPuntos_cuandoSuscripcionActiva_debeIncrementarPuntosDeLealtad -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="acumularPuntos_cuandoSuscripcionInactiva_debeLanzarExcepcion()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-01T17:44:21 CST" name="acumularPuntos_cuandoSuscripcionInactiva_debeLanzarExcepcion" description="HU4 - Fallo: Acumular puntos en suscripción inactiva debe lanzar excepción" finished-at="2026-03-01T17:44:21 CST" duration-ms="1" status="PASS">
+        <test-method signature="acumularPuntos_cuandoSuscripcionInactiva_debeLanzarExcepcion()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-05T13:53:35 CST" name="acumularPuntos_cuandoSuscripcionInactiva_debeLanzarExcepcion" description="HU4 - Fallo: Acumular puntos en suscripción inactiva debe lanzar excepción" finished-at="2026-03-05T13:53:35 CST" duration-ms="1" status="PASS">
           <exception class="com.quickbite.exception.SuscripcionInactivaException">
             <message>
               <![CDATA[La suscripcion con ID: SUB-001 se encuentra inactiva.]]>
@@ -477,11 +473,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acumularPuntos_cuandoSuscripcionInactiva_debeLanzarExcepcion -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="acumularPuntos_cuandoSuscripcionNoExiste_debeLanzarExcepcion()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-01T17:44:21 CST" name="acumularPuntos_cuandoSuscripcionNoExiste_debeLanzarExcepcion" description="HU4 - Fallo: Acumular puntos en suscripción inexistente debe lanzar excepción" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
+        <test-method signature="acumularPuntos_cuandoSuscripcionNoExiste_debeLanzarExcepcion()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-05T13:53:35 CST" name="acumularPuntos_cuandoSuscripcionNoExiste_debeLanzarExcepcion" description="HU4 - Fallo: Acumular puntos en suscripción inexistente debe lanzar excepción" finished-at="2026-03-05T13:53:35 CST" duration-ms="1" status="PASS">
           <exception class="com.quickbite.exception.SuscripcionNoEncontradaException">
             <message>
               <![CDATA[No se encontro una suscripcion con el ID: SUB-INEXISTENTE]]>
@@ -530,11 +526,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acumularPuntos_cuandoSuscripcionNoExiste_debeLanzarExcepcion -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="canjearRecompensa_cuandoPuntosInsuficientes_debeLanzarExcepcion()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-01T17:44:21 CST" name="canjearRecompensa_cuandoPuntosInsuficientes_debeLanzarExcepcion" description="HU5 - Fallo: Canjear recompensa con puntos insuficientes debe lanzar excepción" finished-at="2026-03-01T17:44:21 CST" duration-ms="2" status="PASS">
+        <test-method signature="canjearRecompensa_cuandoPuntosInsuficientes_debeLanzarExcepcion()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-05T13:53:35 CST" name="canjearRecompensa_cuandoPuntosInsuficientes_debeLanzarExcepcion" description="HU5 - Fallo: Canjear recompensa con puntos insuficientes debe lanzar excepción" finished-at="2026-03-05T13:53:35 CST" duration-ms="3" status="PASS">
           <exception class="com.quickbite.exception.PuntosInsuficientesException">
             <message>
               <![CDATA[Puntos insuficientes. Disponibles: 50, Requeridos: 200]]>
@@ -579,19 +575,23 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canjearRecompensa_cuandoPuntosInsuficientes_debeLanzarExcepcion -->
-        <test-method signature="canjearRecompensa_cuandoPuntosSuficientes_debeDescontarPuntosDeLealtad()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-01T17:44:21 CST" name="canjearRecompensa_cuandoPuntosSuficientes_debeDescontarPuntosDeLealtad" description="HU5 - Éxito: Canjear recompensa con puntos suficientes debe descontar puntos" finished-at="2026-03-01T17:44:21 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="canjearRecompensa_cuandoPuntosSuficientes_debeDescontarPuntosDeLealtad()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-05T13:53:35 CST" name="canjearRecompensa_cuandoPuntosSuficientes_debeDescontarPuntosDeLealtad" description="HU5 - Éxito: Canjear recompensa con puntos suficientes debe descontar puntos" finished-at="2026-03-05T13:53:35 CST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canjearRecompensa_cuandoPuntosSuficientes_debeDescontarPuntosDeLealtad -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="canjearRecompensa_cuandoRecompensaNoDisponible_debeLanzarExcepcion()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-01T17:44:21 CST" name="canjearRecompensa_cuandoRecompensaNoDisponible_debeLanzarExcepcion" description="HU5 - Fallo: Canjear recompensa no disponible debe lanzar excepción" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
+        <test-method signature="canjearRecompensa_cuandoRecompensaNoDisponible_debeLanzarExcepcion()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-05T13:53:35 CST" name="canjearRecompensa_cuandoRecompensaNoDisponible_debeLanzarExcepcion" description="HU5 - Fallo: Canjear recompensa no disponible debe lanzar excepción" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[La recompensa no está disponible o es nula.]]>
@@ -636,7 +636,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canjearRecompensa_cuandoRecompensaNoDisponible_debeLanzarExcepcion -->
-        <test-method signature="canjearRecompensa_cuandoSuscripcionInactiva_debeLanzarExcepcion()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-01T17:44:21 CST" name="canjearRecompensa_cuandoSuscripcionInactiva_debeLanzarExcepcion" description="HU5 - Fallo: Canjear recompensa en suscripción inactiva debe lanzar excepción" finished-at="2026-03-01T17:44:21 CST" duration-ms="1" status="PASS">
+        <test-method signature="canjearRecompensa_cuandoSuscripcionInactiva_debeLanzarExcepcion()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-05T13:53:35 CST" name="canjearRecompensa_cuandoSuscripcionInactiva_debeLanzarExcepcion" description="HU5 - Fallo: Canjear recompensa en suscripción inactiva debe lanzar excepción" finished-at="2026-03-05T13:53:35 CST" duration-ms="1" status="PASS">
           <exception class="com.quickbite.exception.SuscripcionInactivaException">
             <message>
               <![CDATA[La suscripcion con ID: SUB-001 se encuentra inactiva.]]>
@@ -682,31 +682,27 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canjearRecompensa_cuandoSuscripcionInactiva_debeLanzarExcepcion -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="consultarHistorial_cuandoExistenMovimientos_debeRetornarTodos()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-01T17:44:21 CST" name="consultarHistorial_cuandoExistenMovimientos_debeRetornarTodos" description="HU8 - Éxito: Historial refleja todos los movimientos realizados" finished-at="2026-03-01T17:44:21 CST" duration-ms="1" status="PASS">
+        <test-method signature="consultarHistorial_cuandoExistenMovimientos_debeRetornarTodos()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-05T13:53:35 CST" name="consultarHistorial_cuandoExistenMovimientos_debeRetornarTodos" description="HU8 - Éxito: Historial refleja todos los movimientos realizados" finished-at="2026-03-05T13:53:35 CST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- consultarHistorial_cuandoExistenMovimientos_debeRetornarTodos -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="consultarHistorial_cuandoSinMovimientos_debeRetornarListaVacia()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-01T17:44:21 CST" name="consultarHistorial_cuandoSinMovimientos_debeRetornarListaVacia" description="HU8 - Éxito: Historial vacío cuando no hay movimientos" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
+        <test-method signature="consultarHistorial_cuandoSinMovimientos_debeRetornarListaVacia()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-05T13:53:35 CST" name="consultarHistorial_cuandoSinMovimientos_debeRetornarListaVacia" description="HU8 - Éxito: Historial vacío cuando no hay movimientos" finished-at="2026-03-05T13:53:35 CST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- consultarHistorial_cuandoSinMovimientos_debeRetornarListaVacia -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="consultarHistorial_cuandoSuscripcionNoExiste_debeLanzarExcepcion()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-01T17:44:21 CST" name="consultarHistorial_cuandoSuscripcionNoExiste_debeLanzarExcepcion" description="HU8 - Fallo: Historial de suscripción inexistente debe lanzar excepción" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
+        <test-method signature="consultarHistorial_cuandoSuscripcionNoExiste_debeLanzarExcepcion()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-05T13:53:35 CST" name="consultarHistorial_cuandoSuscripcionNoExiste_debeLanzarExcepcion" description="HU8 - Fallo: Historial de suscripción inexistente debe lanzar excepción" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
           <exception class="com.quickbite.exception.SuscripcionNoEncontradaException">
             <message>
               <![CDATA[No se encontro una suscripcion con el ID: SUB-INEXISTENTE]]>
@@ -754,47 +750,51 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- consultarHistorial_cuandoSuscripcionNoExiste_debeLanzarExcepcion -->
-        <test-method signature="obtenerTotalAcumulado_cuandoSinMovimientos_debeRetornarCero()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-01T17:44:21 CST" name="obtenerTotalAcumulado_cuandoSinMovimientos_debeRetornarCero" description="HU10 - Fallo: Total acumulado sin movimientos debe retornar cero" finished-at="2026-03-01T17:44:21 CST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="obtenerTotalAcumulado_cuandoSinMovimientos_debeRetornarCero()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-05T13:53:35 CST" name="obtenerTotalAcumulado_cuandoSinMovimientos_debeRetornarCero" description="HU10 - Fallo: Total acumulado sin movimientos debe retornar cero" finished-at="2026-03-05T13:53:35 CST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- obtenerTotalAcumulado_cuandoSinMovimientos_debeRetornarCero -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="obtenerTotalAcumulado_cuandoVariosPedidos_debeRetornarSumaCorrecta()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-01T17:44:21 CST" name="obtenerTotalAcumulado_cuandoVariosPedidos_debeRetornarSumaCorrecta" description="HU10 - Éxito: Total acumulado suma correctamente todos los pedidos" finished-at="2026-03-01T17:44:21 CST" duration-ms="1" status="PASS">
+        <test-method signature="obtenerTotalAcumulado_cuandoVariosPedidos_debeRetornarSumaCorrecta()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-05T13:53:35 CST" name="obtenerTotalAcumulado_cuandoVariosPedidos_debeRetornarSumaCorrecta" description="HU10 - Éxito: Total acumulado suma correctamente todos los pedidos" finished-at="2026-03-05T13:53:35 CST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- obtenerTotalAcumulado_cuandoVariosPedidos_debeRetornarSumaCorrecta -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="obtenerTotalCanjeado_cuandoVariosCanjes_debeRetornarSumaCorrecta()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-01T17:44:21 CST" name="obtenerTotalCanjeado_cuandoVariosCanjes_debeRetornarSumaCorrecta" description="HU10 - Éxito: Total canjeado suma correctamente todos los canjes" finished-at="2026-03-01T17:44:21 CST" duration-ms="1" status="PASS">
+        <test-method signature="obtenerTotalCanjeado_cuandoVariosCanjes_debeRetornarSumaCorrecta()[pri:0, instance:com.quickbite.service.PuntosServiceTest@25fb8912]" started-at="2026-03-05T13:53:35 CST" name="obtenerTotalCanjeado_cuandoVariosCanjes_debeRetornarSumaCorrecta" description="HU10 - Éxito: Total canjeado suma correctamente todos los canjes" finished-at="2026-03-05T13:53:35 CST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- obtenerTotalCanjeado_cuandoVariosCanjes_debeRetornarSumaCorrecta -->
       </class> <!-- com.quickbite.service.PuntosServiceTest -->
     </test> <!-- Pruebas de PuntosService (HU-4, HU-5, HU-8, HU-10) -->
-    <test started-at="2026-03-01T17:44:21 CST" name="Pruebas de ReglasService (HU-6, HU-7)" finished-at="2026-03-01T17:44:21 CST" duration-ms="19">
+    <test started-at="2026-03-05T13:53:35 CST" name="Pruebas de ReglasService (HU-6, HU-7)" finished-at="2026-03-05T13:53:35 CST" duration-ms="19">
       <class name="com.quickbite.service.ReglasServiceTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="definirReglaAcumulacion_cuandoDatosValidos_debeCrearReglaActiva()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-01T17:44:21 CST" name="definirReglaAcumulacion_cuandoDatosValidos_debeCrearReglaActiva" description="HU6 - Exito: Definir regla de acumulacion valida" finished-at="2026-03-01T17:44:21 CST" duration-ms="2" status="PASS">
+        <test-method signature="definirReglaAcumulacion_cuandoDatosValidos_debeCrearReglaActiva()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-05T13:53:35 CST" name="definirReglaAcumulacion_cuandoDatosValidos_debeCrearReglaActiva" description="HU6 - Exito: Definir regla de acumulacion valida" finished-at="2026-03-05T13:53:35 CST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- definirReglaAcumulacion_cuandoDatosValidos_debeCrearReglaActiva -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="definirReglaAcumulacion_cuandoIdDuplicado_debeLanzarExcepcion()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-01T17:44:21 CST" name="definirReglaAcumulacion_cuandoIdDuplicado_debeLanzarExcepcion" description="HU6 - Fallo: ID duplicado lanza excepcion" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
+        <test-method signature="definirReglaAcumulacion_cuandoIdDuplicado_debeLanzarExcepcion()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-05T13:53:35 CST" name="definirReglaAcumulacion_cuandoIdDuplicado_debeLanzarExcepcion" description="HU6 - Fallo: ID duplicado lanza excepcion" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[Ya existe una regla de acumulación con el ID: RA-001]]>
@@ -839,7 +839,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- definirReglaAcumulacion_cuandoIdDuplicado_debeLanzarExcepcion -->
-        <test-method signature="definirReglaAcumulacion_cuandoPuntosCero_debeLanzarExcepcion()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-01T17:44:21 CST" name="definirReglaAcumulacion_cuandoPuntosCero_debeLanzarExcepcion" description="HU6 - Fallo: Puntos cero lanza excepcion" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
+        <test-method signature="definirReglaAcumulacion_cuandoPuntosCero_debeLanzarExcepcion()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-05T13:53:35 CST" name="definirReglaAcumulacion_cuandoPuntosCero_debeLanzarExcepcion" description="HU6 - Fallo: Puntos cero lanza excepcion" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[Los puntos por pedido deben ser mayores a 0.]]>
@@ -884,19 +884,23 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- definirReglaAcumulacion_cuandoPuntosCero_debeLanzarExcepcion -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="definirReglaRedencion_cuandoDatosValidos_debeCrearReglaActiva()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-01T17:44:21 CST" name="definirReglaRedencion_cuandoDatosValidos_debeCrearReglaActiva" description="HU7 - Exito: Definir regla de redencion valida" finished-at="2026-03-01T17:44:21 CST" duration-ms="2" status="PASS">
+        <test-method signature="definirReglaRedencion_cuandoDatosValidos_debeCrearReglaActiva()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-05T13:53:35 CST" name="definirReglaRedencion_cuandoDatosValidos_debeCrearReglaActiva" description="HU7 - Exito: Definir regla de redencion valida" finished-at="2026-03-05T13:53:35 CST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- definirReglaRedencion_cuandoDatosValidos_debeCrearReglaActiva -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="definirReglaRedencion_cuandoIdDuplicado_debeLanzarExcepcion()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-01T17:44:21 CST" name="definirReglaRedencion_cuandoIdDuplicado_debeLanzarExcepcion" description="HU7 - Fallo: ID duplicado lanza excepcion" finished-at="2026-03-01T17:44:21 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="definirReglaRedencion_cuandoIdDuplicado_debeLanzarExcepcion()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-05T13:53:35 CST" name="definirReglaRedencion_cuandoIdDuplicado_debeLanzarExcepcion" description="HU7 - Fallo: ID duplicado lanza excepcion" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[Ya existe una regla de redención con el ID: RR-001]]>
@@ -941,15 +945,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- definirReglaRedencion_cuandoIdDuplicado_debeLanzarExcepcion -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="definirReglaRedencion_cuandoPuntosNegativos_debeLanzarExcepcion()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-01T17:44:21 CST" name="definirReglaRedencion_cuandoPuntosNegativos_debeLanzarExcepcion" description="HU7 - Fallo: Puntos negativos lanza excepcion" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
+        <test-method signature="definirReglaRedencion_cuandoPuntosNegativos_debeLanzarExcepcion()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-05T13:53:35 CST" name="definirReglaRedencion_cuandoPuntosNegativos_debeLanzarExcepcion" description="HU7 - Fallo: Puntos negativos lanza excepcion" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[Los puntos mínimos para redención deben ser mayores a 0.]]>
@@ -994,46 +990,50 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- definirReglaRedencion_cuandoPuntosNegativos_debeLanzarExcepcion -->
-        <test-method signature="obtenerReglaAcumulacionActiva_cuandoExisteReglaActiva_debeRetornarla()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-01T17:44:21 CST" name="obtenerReglaAcumulacionActiva_cuandoExisteReglaActiva_debeRetornarla" description="HU6 - Exito: Regla activa es recuperada correctamente" finished-at="2026-03-01T17:44:21 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="obtenerReglaAcumulacionActiva_cuandoExisteReglaActiva_debeRetornarla()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-05T13:53:35 CST" name="obtenerReglaAcumulacionActiva_cuandoExisteReglaActiva_debeRetornarla" description="HU6 - Exito: Regla activa es recuperada correctamente" finished-at="2026-03-05T13:53:35 CST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- obtenerReglaAcumulacionActiva_cuandoExisteReglaActiva_debeRetornarla -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="obtenerReglaAcumulacionActiva_cuandoNoHayReglas_debeRetornarOptionalVacio()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-01T17:44:21 CST" name="obtenerReglaAcumulacionActiva_cuandoNoHayReglas_debeRetornarOptionalVacio" description="HU6 - Fallo: Sin reglas retorna Optional vacio" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
+        <test-method signature="obtenerReglaAcumulacionActiva_cuandoNoHayReglas_debeRetornarOptionalVacio()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-05T13:53:35 CST" name="obtenerReglaAcumulacionActiva_cuandoNoHayReglas_debeRetornarOptionalVacio" description="HU6 - Fallo: Sin reglas retorna Optional vacio" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- obtenerReglaAcumulacionActiva_cuandoNoHayReglas_debeRetornarOptionalVacio -->
-        <test-method signature="obtenerReglaRedencionActiva_cuandoExisteReglaActiva_debeRetornarla()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-01T17:44:21 CST" name="obtenerReglaRedencionActiva_cuandoExisteReglaActiva_debeRetornarla" description="HU7 - Exito: Regla de redencion activa es recuperada" finished-at="2026-03-01T17:44:21 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="obtenerReglaRedencionActiva_cuandoExisteReglaActiva_debeRetornarla()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-05T13:53:35 CST" name="obtenerReglaRedencionActiva_cuandoExisteReglaActiva_debeRetornarla" description="HU7 - Exito: Regla de redencion activa es recuperada" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- obtenerReglaRedencionActiva_cuandoExisteReglaActiva_debeRetornarla -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="obtenerReglaRedencionActiva_cuandoNoHayReglas_debeRetornarOptionalVacio()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-01T17:44:21 CST" name="obtenerReglaRedencionActiva_cuandoNoHayReglas_debeRetornarOptionalVacio" description="HU7 - Fallo: Sin reglas retorna Optional vacio" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
+        <test-method signature="obtenerReglaRedencionActiva_cuandoNoHayReglas_debeRetornarOptionalVacio()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-05T13:53:35 CST" name="obtenerReglaRedencionActiva_cuandoNoHayReglas_debeRetornarOptionalVacio" description="HU7 - Fallo: Sin reglas retorna Optional vacio" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- obtenerReglaRedencionActiva_cuandoNoHayReglas_debeRetornarOptionalVacio -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-01T17:44:21 CST" name="setUp" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="obtenerReglasAcumulacion_cuandoExisteUnaRegla_debeRetornarListaConUnElemento()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-01T17:44:21 CST" name="obtenerReglasAcumulacion_cuandoExisteUnaRegla_debeRetornarListaConUnElemento" description="HU6 - Exito: Lista de reglas contiene la regla registrada" finished-at="2026-03-01T17:44:21 CST" duration-ms="0" status="PASS">
+        <test-method signature="obtenerReglasAcumulacion_cuandoExisteUnaRegla_debeRetornarListaConUnElemento()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-05T13:53:35 CST" name="obtenerReglasAcumulacion_cuandoExisteUnaRegla_debeRetornarListaConUnElemento" description="HU6 - Exito: Lista de reglas contiene la regla registrada" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- obtenerReglasAcumulacion_cuandoExisteUnaRegla_debeRetornarListaConUnElemento -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.quickbite.service.ReglasServiceTest@209da20d]" started-at="2026-03-05T13:53:35 CST" name="setUp" finished-at="2026-03-05T13:53:35 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
       </class> <!-- com.quickbite.service.ReglasServiceTest -->
     </test> <!-- Pruebas de ReglasService (HU-6, HU-7) -->
   </suite> <!-- Suite - QuickBite Loyalty Program -->
